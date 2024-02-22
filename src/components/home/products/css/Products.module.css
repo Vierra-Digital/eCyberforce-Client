@@ -101,16 +101,12 @@
   align-items: center;
 }
 .Sevice_container .image .cyber {
-  width: 421px;
+  width: 80%;
   height: 475px;
 }
 @media screen and (max-width: 950px) {
   .Sevice_container .image {
     justify-content: center;
-  }
-  .Sevice_container .image .cyber {
-    width: 305px;
-    height: 390px;
   }
 }
 .more {

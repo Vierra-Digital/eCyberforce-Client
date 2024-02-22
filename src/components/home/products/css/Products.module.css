@@ -1,8 +1,13 @@
 .container {
-  margin: 200px clamp(0px, 4vw, 80px);
+  margin: 200px clamp(0px, 10vw, 500px);
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+@media screen and (max-width: 700px) {
+  .container {
+    margin: 200px clamp(0px, 5vw, 5px);
+  }
 }
 .header h6 {
   font-family: var(--Sora);
@@ -13,18 +18,23 @@
 }
 .header .title {
   max-width: 60%;
+  margin-bottom: 10px;
 }
-@media screen and (max-width: 750px) {
-  .header .title {
-    max-width: 100%;
-  }
-}
+
 .header .title h2 {
   font-family: var(--Sora);
   font-size: 32px;
   font-weight: 500;
   line-height: 42px;
   color: #18181b;
+}
+@media screen and (max-width: 750px) {
+  .header .title {
+    max-width: 100%;
+  }
+  .header .title h2 {
+    font-size: 24px;
+  }
 }
 .header p {
   font-family: var(--Sora);
@@ -39,14 +49,14 @@
   flex-shrink: 2;
   gap: 32px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
   .Sevice_container {
     flex-direction: column;
     gap: 32px;
   }
 }
 .Sevice_container .Sevice {
-  flex: 50;
+  flex: 45;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -66,7 +76,7 @@
 .Sevice_container .Sevice .list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 14px;
 }
 .Sevice_container .Sevice .list h3 {
   font-family: var(--Sora);
@@ -86,7 +96,7 @@
 }
 
 .Sevice_container .image {
-  flex: 40;
+  flex: 45;
   display: flex;
   align-items: center;
 }
@@ -94,7 +104,7 @@
   width: 421px;
   height: 475px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
   .Sevice_container .image {
     justify-content: center;
   }
@@ -104,7 +114,7 @@
   }
 }
 .more {
-  margin: 0 auto;
+  margin: auto;
   cursor: pointer;
 }
 .more h3 {

@@ -56,7 +56,7 @@
   }
 }
 .Sevice_container .Sevice {
-  flex: 45;
+  flex: 50;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -86,7 +86,7 @@
   color: #18181b;
 }
 .Sevice_container .Sevice .list ul {
-  margin-left: 15px;
+  margin-left: 10px;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -103,15 +103,15 @@
 }
 .Sevice_container .image .cyber {
   width: 80%;
-  height: 405px;
+  height: 475px;
 }
 @media screen and (max-width: 950px) {
   .Sevice_container .image {
     justify-content: center;
   }
   .Sevice_container .image .cyber {
-    width: 70%;
-    height: 345px;
+    width: 80%;
+    height: 400px;
   }
 }
 .more {

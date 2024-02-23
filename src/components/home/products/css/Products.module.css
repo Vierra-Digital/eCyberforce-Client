@@ -1,12 +1,13 @@
 .container {
-  margin: 200px clamp(0px, 10vw, 500px);
+  margin: 200px auto;
   display: flex;
   flex-direction: column;
   gap: 40px;
+  max-width: 1024px;
 }
 @media screen and (max-width: 700px) {
   .container {
-    margin: 200px clamp(1px, 6vw, 10px);
+    margin: 200px 10px;
   }
 }
 .header h6 {

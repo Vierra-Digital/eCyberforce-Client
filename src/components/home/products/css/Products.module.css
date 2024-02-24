@@ -15,6 +15,7 @@
     width: 90%;
   }
 }
+
 /* header */
 .header h6 {
   font-family: var(--Sora);
@@ -68,6 +69,11 @@
   .frame_one {
     flex-direction: column;
     padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .frame_one {
+    padding: 15px 10px;
   }
 }
 .frame_one .image {
@@ -215,7 +221,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
   .two_sections {
     flex-direction: column;
   }

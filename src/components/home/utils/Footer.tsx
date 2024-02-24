@@ -19,7 +19,7 @@ function Footer() {
         <div className="flex items-end">
           <Image src="/bug.png" alt="bug" width={316} height={100} className="w-[114px] sm:w-[240px] lg:w-[316px] mt-[120px]" />
         </div>
-        <div className="flex items-center justify-center flex-col text-center font-medium gap-6 lg:w-[700px] w-[550px] sm:w-[600px] lg:ml-24 sm:ml-6 ml-2 mt-10">
+        <div className="flex items-center justify-center flex-col text-center font-medium gap-6 lg:w-[700px] w-[500px] sm:w-[600px] lg:ml-24 sm:ml-6 ml-2 mt-10">
           <h1 className={`lg:text-[32px] text-[24px] leading-[42px] ${sora.className}`}>
             Get our cybersecurity solution now and ensure the protection of your
             digital assets.
@@ -37,7 +37,7 @@ function Footer() {
         </div>
       </div>
       <div className="flex justify-center items-center">
-        <div className="lg:flex block text-center lg:text-start gap-[60px] mt-12 lg:mt-20 ml-[-10px] lg:ml-0">
+        <div className="lg:flex sm:grid grid-cols-2 block text-center sm:text-start gap-[60px] mt-12 lg:mt-20 ml-[-10px] lg:ml-0">
         {FooterLinks.map((links, index) => (
           <div key={index} className="flex flex-col gap-[16px]">
             <h2 className={`text-[16px] leading-[24px] font-semibold mt-10 lg:mt-0 ${sora.className}`}>{links.topic}</h2>

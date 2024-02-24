@@ -37,7 +37,7 @@ function Footer() {
         </div>
       </div>
       <div className="flex justify-center items-center">
-        <div className="lg:flex block text-center lg:text-start gap-[60px] mt-12 lg:mt-20">
+        <div className="lg:flex block text-center lg:text-start gap-[60px] mt-12 lg:mt-20 ml-[-10px] lg:ml-0">
         {FooterLinks.map((links, index) => (
           <div key={index} className="flex flex-col gap-[16px]">
             <h2 className={`text-[16px] leading-[24px] font-semibold mt-10 lg:mt-0 ${sora.className}`}>{links.topic}</h2>

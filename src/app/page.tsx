@@ -1,3 +1,4 @@
+import About from "@/components/home/about/About";
 import Chooseus from "@/components/home/chooseus/Chooseus";
 import Hero from "@/components/home/hero/Hero";
 import Products from "@/components/home/products/Products";
@@ -19,6 +20,7 @@ function Page() {
     <div style={Container}>
       <Navbar />
       <Hero />
+      <About />
       <Service />
       <Products />
       <Chooseus />

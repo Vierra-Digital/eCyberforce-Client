@@ -1,2 +1,16 @@
 .Container {
+    background-image: linear-gradient(170deg, #B6BCF200, #B6BCF2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    background: linear-gradient(100deg, #9747FF, #0171C9);
+    color: white;
+    border-radius: 4px;
+    width: 214px;
+    height: 61px;
+    padding: 10px;
 }

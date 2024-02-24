@@ -219,6 +219,12 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 400px) {
+  .two_sections .section_one .container_section,
+  .two_sections .section_two {
+    padding: 32px 10px;
+  }
+}
 
 .more {
   margin: auto;

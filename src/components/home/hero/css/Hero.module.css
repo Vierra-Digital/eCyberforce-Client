@@ -1,2 +1,61 @@
 .Container {
+    background: linear-gradient(to bottom, #D0E4F2, #C9C2FF, #9294f8, #9294f8);
+}
+
+.button{
+    background: linear-gradient(100deg, #9747FF, #0171C9);
+    color: white;
+    border-radius: 4px;
+    width: 214px;
+    height: 61px;
+    padding: 10px;
+    font-weight: bold;
+}
+.headerGradient{
+    background: linear-gradient(to right, #9747FF, #0171C9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.reviewContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, transparent, #9294f8);
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
+    padding: 10px;
+    height: 403px;
+    position: relative;
+    overflow: hidden;
+}
+
+.review::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 9px;
+  width: 98%;
+  height: 100%;
+  background: linear-gradient(180deg, transparent 70%, #9294f8);
+}
+
+@media (max-width: 786px){
+    .review{
+        height: 350px;
+        flex-direction: row;
+        width: 100%;
+    }
+    .review::before{
+        display: none;
+    }
 }

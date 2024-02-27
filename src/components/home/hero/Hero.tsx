@@ -14,9 +14,9 @@ const plus = Plus_Jakarta_Sans({
 function Hero() {
   return (
     <div className={styles.Container}>
-      <div className="pt-[64px] mb-10">
+      <div className="pt-[64px] mb-4">
         <div className="flex items-center justify-center">
-          <div className="hidden 2sm:flex">
+          <div className="hidden 2sm:flex absolute left-[12%]">
             <Image 
              src="/zigzag.svg"
              alt="zigzag"
@@ -28,14 +28,6 @@ function Hero() {
             <h1 className={`text-[24px] 2sm:text-[48px] leading-[30px] 2sm:leading-[60px] text-center w-[358px] h-[90px] 2sm:w-[966px] 2sm:h-[120px] ${sora.className}`}>Experience Our <span className={styles.headerGradient}>Cybersecurity Management</span> Using Big Data</h1>
             <p className="2sm:w-[556px] w-[364px] h-[36px] 2sm:h-[40px] text-[16px] text-center leading-[20px]">Helping you manage your on-line Network, Services and Cybersecurity using Big Data</p>
           </div>
-          <div className="hidden xl:flex absolute xl:right-44 right-32 top-60">
-             <Image 
-             src="/arrow.svg"
-             alt="arrow"
-             width={81}
-             height={100}
-            />
-          </div>
         </div>
       </div>
       <div className=" flex flex-col items-center justify-center mb-20"
@@ -46,7 +38,8 @@ function Hero() {
         backgroundPosition: "center",
       }}
       >
-            <div className="block 2sm:flex w-[214px] 2sm:w-[438px] h-[164px] 2sm:h-[93px] gap-[10px]">
+        <div className="flex items-center">
+            <div className="block 2sm:flex w-[214px] 2sm:w-[438px] h-[164px] 2sm:h-[93px] gap-[10px] ml-0 xl:ml-[270px]">
               <div className="mb-[10px] 2sm:mb-0">
               <button className={`w-[214px] h-[61px] p-[10px] rounded-[4px] text-black bg-white font-bold ${sora.className}`}>See Our Products</button>
               </div>
@@ -54,6 +47,15 @@ function Hero() {
               <button className={styles.button}>Download Now</button>
               </div>
             </div>
+            <div className="hidden xl:flex w-[250px] justify-end items-end">
+             <Image 
+             src="/arrow.svg"
+             alt="arrow"
+             width={81}
+             height={100}
+            />
+          </div>
+        </div>
           <div className={styles.reviewContainer}>
             <div className={styles.review}>
               <Review />
@@ -71,6 +73,8 @@ function Hero() {
         <h2 className={`text-[24px] font-medium ${sora.className} text-nowrap`}>Deep Learning Forecast Deep Learning</h2>
         <h2 className={`text-[24px] font-medium ${sora.className} text-nowrap`}>Diagnosis Data Center/Cloud Monitoring Services</h2>
         <h2 className={`text-[24px] font-medium ${sora.className} text-nowrap`}>Wireless/Internet Access</h2>
+        <h2 className={`text-[24px] font-medium ${sora.className} text-nowrap`}>Deep Learning Forecast Deep Learning</h2>
+        <h2 className={`text-[24px] font-medium ${sora.className} text-nowrap`}>Diagnosis Data Center/Cloud Monitoring Services</h2>
       </div>
     </div>
   )

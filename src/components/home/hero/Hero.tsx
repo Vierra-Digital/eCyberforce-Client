@@ -117,7 +117,7 @@ const Review = () => {
 }
 const Review3 = () => {
   return(
-  <div className="2sm:flex block lg:gap-[9px] gap-[9px] 2sm:gap-[6px] rounded-[6px] p-[24px] bg-gradient-to-b from-white to-transparent w-[355px] h-[330px] lg:w-[899px] 2sm:w-[750px] 2sm:h-[126px]">
+  <div className="2sm:flex block lg:gap-[9px] gap-[9px] 2sm:gap-[6px] rounded-[6px] p-[24px] bg-gradient-to-b from-[#e1dff7] from-20% via-[#dad7f7] via-30% to-transparent to-90% w-[355px] h-[330px] lg:w-[899px] 2sm:w-[750px] 2sm:h-[126px]">
     <div className="flex items-start gap-[6px]">
       <h1 className={`text-[32px] ${sora.className}`}>5</h1>
       <Image 

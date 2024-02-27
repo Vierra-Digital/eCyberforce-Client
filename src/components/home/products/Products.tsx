@@ -1,7 +1,6 @@
 import styles from "./css/Products.module.css";
 import Image from "next/image";
-import image_removebg from "./img/image-removebg-preview (1) (1) 1.png";
-// import Cyber from "./img/cyber-security.png";
+import image_removebg from "./img/removebg.png";
 import Icon from "./img/Icon.svg";
 
 function Products() {

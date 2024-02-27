@@ -14,7 +14,7 @@ const plus = Plus_Jakarta_Sans({
 function Hero() {
   return (
     <div className={styles.Container}>
-      <div className="pt-[64px] mb-10">
+      <div className="pt-[64px] mb-4">
         <div className="flex items-center justify-center">
           <div className="hidden 2sm:flex absolute left-[12%]">
             <Image 
@@ -38,7 +38,7 @@ function Hero() {
         backgroundPosition: "center",
       }}
       >
-        <div className="flex">
+        <div className="flex items-center">
             <div className="block 2sm:flex w-[214px] 2sm:w-[438px] h-[164px] 2sm:h-[93px] gap-[10px] ml-0 xl:ml-[270px]">
               <div className="mb-[10px] 2sm:mb-0">
               <button className={`w-[214px] h-[61px] p-[10px] rounded-[4px] text-black bg-white font-bold ${sora.className}`}>See Our Products</button>

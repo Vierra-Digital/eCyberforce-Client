@@ -60,12 +60,13 @@ function Hero() {
             <div className={styles.review}>
               <Review />
               <Review />
+              <Review3 />
               <Review />
             </div>
           </div>
             
       </div>
-      <div className="text-[#C9C2FF] bg-[#9294f8] flex w-full overflow-hidden gap-16"
+      <div className="text-[#C9C2FF]  flex w-full overflow-hidden gap-16"
       style={{
         transform: "rotateX(45deg)"
       }}
@@ -85,6 +86,38 @@ export default Hero;
 const Review = () => {
   return(
   <div className="2sm:flex block lg:gap-[9px] gap-[9px] 2sm:gap-[6px] rounded-[6px] p-[24px] bg-white w-[355px] h-[330px] lg:w-[899px] 2sm:w-[750px] 2sm:h-[126px]">
+    <div className="flex items-start gap-[6px]">
+      <h1 className={`text-[32px] ${sora.className}`}>5</h1>
+      <Image 
+      src="/star.svg"
+      alt="star"
+      width={17}
+      height={20}
+      />
+    </div>
+    <div className="mb-[9px] 2sm:mb-0">
+      <h2 className={`text-[18px] font-bold ${plus.className}`}>I highly recommend this software</h2>
+    </div>
+    <div className="mb-[9px] 2sm:mb-0">
+      <p className="text-[16px] font-normal leading-[26px] w-[307px] h-[104px] lg:w-[403px] 2sm:w-[300px] 2sm:h-[78px]">I recently tried out MacroProbe v1.3 software with and I found it to be extremely efficient and accurate in detecting anomalies.</p>
+    </div>
+    <div className="mb-[9px] 2sm:mb-0">
+      <Image 
+      src="/profile.png"
+      alt="profile"
+      width={26}
+      height={26}
+      />
+    </div>
+    <div>
+      <h2 className={`text-[16px] font-bold ${plus.className} w-[97px] h-[28px]`}>Denny Jones</h2>
+    </div>
+  </div>
+  )
+}
+const Review3 = () => {
+  return(
+  <div className="2sm:flex block lg:gap-[9px] gap-[9px] 2sm:gap-[6px] rounded-[6px] p-[24px] bg-gradient-to-b from-white to-transparent w-[355px] h-[330px] lg:w-[899px] 2sm:w-[750px] 2sm:h-[126px]">
     <div className="flex items-start gap-[6px]">
       <h1 className={`text-[32px] ${sora.className}`}>5</h1>
       <Image 

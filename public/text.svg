@@ -1,0 +1,11 @@
+<svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define the curved path for the U shape -->
+  <path id="curve" d="M 50,50 Q 100,100 150,50" fill="none" stroke="black"/>
+  
+  <!-- Use textPath to place text along the curve -->
+  <text font-family="Arial" font-size="14">
+    <textPath xlink:href="#curve">
+      Your Curved Text Here
+    </textPath>
+  </text>
+</svg>

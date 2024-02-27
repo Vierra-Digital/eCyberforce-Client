@@ -126,6 +126,15 @@
     height: 350px;
   }
 }
+@media screen and (max-width: 300px) {
+  .Sevice_container .image {
+    justify-content: center;
+  }
+  .Sevice_container .image .cyber {
+    width: 95%;
+    height: 300px;
+  }
+}
 .more {
   margin: auto;
   cursor: pointer;

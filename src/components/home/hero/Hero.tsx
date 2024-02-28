@@ -25,8 +25,8 @@ function Hero() {
             />
           </div>
           <div className="flex flex-col items-center justify-center gap-[24px]">
-            <h1 className={`text-[24px] 2sm:text-[48px] leading-[30px] 2sm:leading-[60px] text-center w-[358px] h-[90px] 2sm:w-[966px] 2sm:h-[120px] ${sora.className}`}>Experience Our <span className={styles.headerGradient}>Cybersecurity Management</span> Using Big Data</h1>
-            <p className="2sm:w-[556px] w-[364px] h-[36px] 2sm:h-[40px] text-[16px] text-center leading-[20px]">Helping you manage your on-line Network, Services and Cybersecurity using Big Data</p>
+            <h1 className={`text-[24px] 2sm:text-[48px] leading-[30px] 2sm:leading-[60px] text-center w-[250px] xs:w-[358px] h-[90px] 2sm:w-[966px] 2sm:h-[120px] ${sora.className}`}>Experience Our <span className={styles.headerGradient}>Cybersecurity Management</span> Using Big Data</h1>
+            <p className="2sm:w-[556px] xs:w-[364px] w-[250px] h-[36px] 2sm:h-[40px] text-[12px] xs:text-[16px] text-center leading-[20px]">Helping you manage your on-line Network, Services and Cybersecurity using Big Data</p>
           </div>
         </div>
       </div>

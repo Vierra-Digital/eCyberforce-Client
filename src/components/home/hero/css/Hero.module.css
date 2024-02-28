@@ -1,5 +1,5 @@
 .Container {
-    background: linear-gradient(to bottom, #D0E4F2, #C9C2FF, #9294f8, #9294f8);
+    background: linear-gradient(to bottom, #D0E4F2, #9799f7 );
 }
 
 .button{
@@ -24,7 +24,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, transparent, #9294f8);
 }
 
 .review{
@@ -34,20 +33,12 @@
     gap: 6px;
     width: fit-content;
     padding: 10px;
-    height: 403px;
+    height: 380px;
     position: relative;
     overflow: hidden;
 }
 
-.review::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 9px;
-  width: 98%;
-  height: 100%;
-  background: linear-gradient(180deg, transparent 70%, #9294f8);
-}
+
 
 @media (max-width: 786px){
     .review{

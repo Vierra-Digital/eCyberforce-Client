@@ -61,7 +61,7 @@
   flex-shrink: 2;
   gap: 32px;
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 800px) {
   .Sevice_container {
     flex-direction: column;
     gap: 32px;
@@ -117,16 +117,21 @@
   width: 80%;
   height: 475px;
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1000px) {
+  .Sevice_container .image .cyber {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 800px) {
   .Sevice_container .image {
     justify-content: center;
   }
   .Sevice_container .image .cyber {
     width: 80%;
-    height: 350px;
+    height: 380px;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
   .Sevice_container .image {
     justify-content: center;
   }

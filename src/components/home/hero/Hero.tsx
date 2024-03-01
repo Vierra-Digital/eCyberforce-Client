@@ -66,7 +66,7 @@ function Hero() {
           </div>
             
       </div>
-      <div className="text-[#C9C2FF]  flex w-full overflow-hidden gap-16"
+      <div className="text-[#C9C2FF]  flex w-full overflow-hidden gap-16 flex-nowrap"
       style={{
         transform: "rotateX(45deg)"
       }}

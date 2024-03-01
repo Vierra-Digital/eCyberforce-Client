@@ -61,7 +61,7 @@
 
 /* cards */
 .cards {
-  margin-top: 20px;
+  max-width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
@@ -122,10 +122,10 @@
 
 @media screen and (max-width: 1200px) {
   .cards {
-    justify-content: center;
+    width: 90%;
+    margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    width: 90%;
   }
   .card .img {
     transform: translateY(-50px);
@@ -172,5 +172,13 @@
   .card .buttons {
     margin: 7px 0;
     height: auto;
+  }
+}
+@media screen and (max-width: 360px) {
+  .cards {
+    width: 98%;
+  }
+  .card .img {
+    width: 99%;
   }
 }

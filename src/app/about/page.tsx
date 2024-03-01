@@ -18,7 +18,7 @@ function Page() {
           Journey in Cyberspace Management
         </h1>
         <p
-          className={`text-[12px] xs:text-[14px] sm:text-[16px] font-normal leading-[26px] w-[270px] xs:w-[355px] h-[494px] sm:w-[569px] sm:h-[338px] ${sora.className}`}
+          className={`text-[12px] xs:text-[14px] sm:text-[16px] font-normal leading-[26px] w-[270px] xs:w-[90%] h-[494px] sm:w-[600px] sm:h-[338px] ${sora.className}`}
         >
           After 30 years in the industry, we decided to alter direction. Now, we
           share our passion by helping others Manage The Cyberspace. Our ramp up

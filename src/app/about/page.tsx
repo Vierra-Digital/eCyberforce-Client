@@ -10,7 +10,7 @@ function Page() {
   return (
     <>
       <div className="w-full flex items-center justify-center flex-col gap-[32px] xs:gap-[24px] pt-[64px] mb-6 sm:mb-14">
-        <h3 className={`text-[#8C26FF] text-[14px]`}>About Us</h3>
+        <h3 className={`text-[#8C26FF] text-[14px] ${sora.className}`}>About Us</h3>
         <h1
           className={`sm:text-[32px] xs:text-[24px] text-[18px] leading-[42px] w-[290px] xs:w-[355px] h-[160px] sm:w-[642px] sm:h-[126px] text-center font-medium ${sora.className}`}
         >

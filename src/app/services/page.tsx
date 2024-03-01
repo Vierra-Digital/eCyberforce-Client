@@ -1,7 +1,13 @@
-import React from "react";
+import Services from "@/components/services/Services";
+import Footer from "@/components/home/utils/Footer";
 
 function Page() {
-  return <div>Page</div>;
+  return (
+    <div>
+      <Services />
+      <Footer />
+    </div>
+  );
 }
 
 export default Page;

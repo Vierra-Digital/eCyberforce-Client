@@ -61,6 +61,7 @@
 
 /* cards */
 .cards {
+  margin: 40px auto;
   max-width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -73,7 +74,7 @@
 }
 .card .img {
   margin: 0 auto;
-  width: 80%;
+  width: 85%;
 }
 .card image {
   margin: 0 auto;
@@ -123,7 +124,7 @@
 @media screen and (max-width: 1200px) {
   .cards {
     width: 90%;
-    margin: auto;
+
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
@@ -162,6 +163,9 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .cards {
+    max-width: 95%;
+  }
   .card .header_text {
     height: auto;
     margin-top: -10vw;

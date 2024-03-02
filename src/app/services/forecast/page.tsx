@@ -1,7 +1,13 @@
-import React from "react";
+import Forecast from "@/components/services/forecast/Forecast";
+import Footer from "@/components/home/utils/Footer";
 
 function Page() {
-  return <div>Page</div>;
+  return (
+    <div>
+      <Forecast />
+      <Footer />
+    </div>
+  );
 }
 
 export default Page;

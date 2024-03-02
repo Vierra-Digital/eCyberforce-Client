@@ -2,7 +2,7 @@ import React from "react";
 import { Infos } from "./_components/Infos";
 import Image from "next/image";
 import { Sora } from "next/font/google";
-
+import { WhatsNewInfo, BugFixInfo } from "./_constants";
 const sora = Sora({
   subsets: ["latin"],
   weight: ["500"],
@@ -49,8 +49,8 @@ export default function Releases() {
               </p>
             </div>
           </div>
-          <Infos title="What's New" />
-          <Infos title="Bug Fixes" />
+          <Infos title="What's New" Info={WhatsNewInfo}/>
+          <Infos title="Bug Fixes" Info={BugFixInfo}/>
         </div>
 
         <div className="flex gap-[9px] items-center w-[98%] lg:w-[802px] h-[109px] px-[24px] py-[48px] border border-[#EAE9F7] mb-4 mt-4">

@@ -1,7 +1,14 @@
+import Footer from "@/components/home/utils/Footer";
+import Manager from "@/components/services/manager/Manager";
 import React from "react";
 
 function Page() {
-  return <div>Page</div>;
+  return(
+    <>
+    <Manager />
+    <Footer />
+    </>
+  )
 }
 
 export default Page;

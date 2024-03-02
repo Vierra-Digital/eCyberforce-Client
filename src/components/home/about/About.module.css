@@ -1,2 +1,156 @@
-.Container {
+.container {
+       
+       background-color: #c5d3f8;
+       display: flex;
+       flex-direction: column;
 }
+
+.aboutImg{
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    width:205px;
+    height:270px;
+}
+
+
+
+.title {
+gap: 10px;
+font-family: var(--Sora);
+font-size: 24px;
+font-weight: 500;
+line-height: 44px;
+letter-spacing: 0px;
+text-align: center;
+align-items: center;
+}
+
+.title > span {
+    color: #FFFFFF;
+    background: linear-gradient(103.45deg, #9747FF 34.87%, #0171C9 87.14%);
+    padding: 9px;
+    gap: 10px;
+}
+
+
+
+.content {
+    color: #3F3F46;
+    font-family: var(--Sora);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.content span {
+    color: #393941;
+    font-weight: bold;
+}
+
+ .more > button {
+font-family: var(--Plus Jakarta Sans);
+font-size: 16px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0px;
+color: #0171C9;
+margin: 2rem;
+display:  flex;
+flex-direction: row;
+ }
+
+.more {
+    margin: auto;
+    cursor: pointer;
+  }
+  
+.btnIcon {
+   margin-top: 0.3rem; 
+   margin-left: 0.7rem;
+   width: 21px;
+}
+
+  @media screen and (max-width: 1440px) and (min-width: 900px) {
+    .container {
+       display: grid;
+       grid-template-columns: 50% 50%;
+       align-items: left;
+       justify-content: left;
+    }
+    .aboutImg {
+        width: 374px;
+        height: 491px;
+    }
+    .subcontainer {
+        display: grid;
+        grid-template-rows: 3;
+    }
+    .title  {    
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 2.4rem;
+}
+    .content {
+     font-size: 16px;
+     margin-left: 46rem;
+     width: 450.68px;
+     
+    }
+    
+}
+ 
+    @media screen and (max-width: 1920px) and (min-width: 1080px) {
+        .container {
+           display: grid;
+           grid-template-columns: 50% 50%;
+           align-items: left;
+           justify-content: left;
+           /* height: 600px; */
+        }
+        .aboutImg {
+            width: 374px;
+            height: 491px;
+            margin-left: 20rem;
+        }
+        .subcontainer {
+            display: grid;
+            grid-template-rows: 3;
+        }
+        .title  {    
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 50px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-top: 2.4rem;
+    }
+        .content {
+         font-size: 16px;
+         width: 450.68px;
+       
+        }
+        .more {
+            margin-bottom: 4rem;
+        }
+    }
+
+       
+       
+       
+    
+    
+    
+    
+    
+
+    
+

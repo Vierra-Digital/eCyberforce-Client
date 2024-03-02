@@ -71,11 +71,11 @@ function Hero() {
         transform: "rotateX(45deg)"
       }}
       >
-        <h2 className={`text-[24px] font-medium ${sora.className} text-nowrap`}>Deep Learning Forecast Deep Learning</h2>
-        <h2 className={`text-[24px] font-medium ${sora.className} text-nowrap`}>Diagnosis Data Center/Cloud Monitoring Services</h2>
-        <h2 className={`text-[24px] font-medium ${sora.className} text-nowrap`}>Wireless/Internet Access</h2>
-        <h2 className={`text-[24px] font-medium ${sora.className} text-nowrap`}>Deep Learning Forecast Deep Learning</h2>
-        <h2 className={`text-[24px] font-medium ${sora.className} text-nowrap`}>Diagnosis Data Center/Cloud Monitoring Services</h2>
+        <h2 className={`text-[24px] font-medium ${sora.className} text-nowrap flex`}>Deep Learning Forecast Deep Learning</h2>
+        <h2 className={`text-[24px] font-medium ${sora.className} text-nowrap flex`}>Diagnosis Data Center/Cloud Monitoring Services</h2>
+        <h2 className={`text-[24px] font-medium ${sora.className} text-nowrap flex`}>Wireless/Internet Access</h2>
+        <h2 className={`text-[24px] font-medium ${sora.className} text-nowrap flex`}>Deep Learning Forecast Deep Learning</h2>
+        <h2 className={`text-[24px] font-medium ${sora.className} text-nowrap flex`}>Diagnosis Data Center/Cloud Monitoring Services</h2>
       </div>
     </div>
   )

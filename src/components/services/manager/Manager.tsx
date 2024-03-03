@@ -29,9 +29,9 @@ export default function Manager() {
         </h3>
         <button className={styles.button}>Order Now</button>
       </div>
-      <div className="px-2">
+      <div className="px-2 flex items-center justify-center">
         <p
-          className={`text-[16px] w-[99%] xl:w-[1022px] sm:w-[900px] leading-[24px] text-[#3F3F46] ${sora.className}`}
+          className={`text-[16px] w-[90%] lg:w-[1022px] leading-[24px] text-[#3F3F46] ${sora.className}`}
         >
           The MacroProbe Global Manager v1.3 that can manage multiple
           MacroProbes from the Access License MacroProbe to the Distribution
@@ -55,15 +55,16 @@ export default function Manager() {
             className="flex"
           />
         </div>
-        <div className="sm:w-[492px] w-full">
+         <div className="flex items-center justify-center px-2">
           <p
-            className={` w-[98%]  text-[14px] leading-[24px] text-[#000000] ${sora.className}`}
+            className={` sm:w-[492px] w-full text-[14px] leading-[24px] text-[#000000] ${sora.className}`}
           >
             END-TO-END MONITORING OF NETWORK, SERVICES AND CYBERSECURITY
             DELIVERY FROM WIRELESS ACCESS TO CLOUD SERVICES PROVIDER IN THE
             GLOBAL INTERNET
           </p>
-        </div>
+         </div>
+       
       </div>
       <div className="flex flex-col items-center justify-center gap-[10px]">
         <div className="lg:w-[749px] lg:h-[420px] w-[351px] h-[220px]">
@@ -75,15 +76,16 @@ export default function Manager() {
             className="flex"
           />
         </div>
-        <div className="w-full sm:w-[446px]">
+       <div className="flex items-center justify-center px-2">
           <p
-            className={` w-[98%]  text-[14px] leading-[24px] text-[#000000] ${sora.className}`}
+            className={`w-[90%] sm:w-[492px] text-[14px] leading-[24px] text-[#000000] ${sora.className}`}
           >
             END-TO-END MONITORING OF NETWORK, SERVICES AND CYBERSECURITY
             DELIVERY FROM WIRELESS ACCESS TO CLOUD SERVICES PROVIDER IN THE
             GLOBAL INTERNET
           </p>
-        </div>
+       </div>
+       
       </div>
       <div className="flex flex-col items-center justify-center gap-[10px] px-2">
         <div className="lg:w-[749px] lg:h-[420px] w-[351px] h-[220px]">
@@ -95,15 +97,16 @@ export default function Manager() {
             className="flex"
           />
         </div>
-        <div className="w-full sm:w-[516px]">
+        <div className="flex items-center justify-center px-2">
           <p
-            className={` w-[98%] text-[14px] leading-[24px] text-[#000000] ${sora.className}`}
+            className={` w-[92%] sm:w-[492px] text-[14px] leading-[24px] text-[#000000] ${sora.className}`}
           >
             END-TO-END MONITORING OF NETWORK, SERVICES AND CYBERSECURITY
             DELIVERY FROM WIRELESS ACCESS TO CLOUD SERVICES PROVIDER IN THE
             GLOBAL INTERNET
           </p>
         </div>
+       
       </div>
     </div>
   );

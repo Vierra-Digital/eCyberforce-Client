@@ -176,24 +176,22 @@ export const shippingInfos = [
 
 export const returnInfos = [
     {title: "", context:[
-        {text: "Once Payment is made to purchase the MacroProbe v1.2, customer has up to 30-days to ask for refund for any reason. It could be they have problem installing the MacroProbe v1.2 on their dedicated hardware or virtual machine or they just not satisfy with the MacroProbe v1.2 in general."}
-    ]
-    },
-
-    {title:"", context: [
-        {text: "Upon completion of the payment, the customer can download the Software (ISO Image) and all its documentations from the current page immediately or they can go to their Email provided at checkout and receive the Link to Download the Software. Customer has up to 72-Hours or 5-Trials to download the MacroProbe Software and all its documentation. If 72-Hours or 5-Trials expired and customer still cannot download the MacroProbe software and all its documenation, customer can send email to ldoan@ecyberforce.com to request a renewal of the download link"},
-    ]
-    },
-    {title: "", context:[
-        {text: "Refund will be the original cost of the MacroProbe v.1.2 1-month subscription of the License That was Ordered (Access License $50/Month, Distribution License $200/Month, or Core License $400/Month) plus tax pay back to the credit card that was originally used for the purchase."},
+        {text: "Once Payment is made to purchase the MacroProbe v1.2, customer has up to 30-days to ask for refund for any reason. It could be they have problem installing the MacroProbe v1.2 on their dedicated hardware or virtual machine or they just not satisfy with the MacroProbe v1.2 in general.",
+        contact: [
+            {contacttext: "Refund will be the original cost of the MacroProbe v.1.2 1-month subscription of the License That was Ordered (Access License $50/Month, Distribution License $200/Month, or Core License $400/Month) plus tax pay back to the credit card that was originally used for the purchase."}
+        ]
+       }
     ]
     },
 
     {title: '', context:[
-        {text: "To initiate a Return, please send email with your Order Number and your complaint for your money back to: ldoan@ecyberforce.com After 30-days after the purchase date, there is no refund."},
-        {text: "Please contact eCyberForce at the following contacts:"},
-        {text: "Email: ldoan@ecyberforce.com"},
-        {text: "Phone: (978) 886-6807"},
+        {text: "To initiate a Return, please send email with your Order Number and your complaint for your money back to: ldoan@ecyberforce.com After 30-days after the purchase date, there is no refund.",
+        contact:[
+            {contacttext: "Please contact eCyberForce at the following contacts:"},
+            {contacttext: "Email: ldoan@ecyberforce.com"},
+            {contacttext: "Phone: (978) 886-6807"}
+        ]
+        },
     ]
     },
     

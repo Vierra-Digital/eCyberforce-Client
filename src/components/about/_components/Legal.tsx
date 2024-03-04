@@ -27,7 +27,7 @@ export default function Legal({type, Info}: LegalProps) {
     <div className='flex items-center justify-center pt-[64px] mb-14'>
         <div className='flex flex-col items-center justify-center'>
           <h3 className={`text-[#8C26FF] text-[14px] ${sora.className}`}>Legal</h3>
-          <h1 className={`text-[#18181B] text-[32px] mt-4 ${sora.className}`}>{type}</h1>
+          <h1 className={`text-[#18181B] text-center text-[32px] mt-4 ${sora.className}`}>{type}</h1>
           {Info.map((info, index) => (
             <div key={index} className='flex flex-col justify-center w-[90%] lg:w-[939px] gap-[24px] mt-10'>
               <h4 className={`text-[16px] font-semibold w-full leading-[24px] text-center sm:text-start ${archivo.className}`}>{info.title}</h4>

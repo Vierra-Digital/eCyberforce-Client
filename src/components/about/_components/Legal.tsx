@@ -49,10 +49,11 @@ export default function Legal({ type, Info }: LegalProps) {
               {info.title ? info.title : null}
             </h4>
             {info.context.map((topic, index) => (
-              <div className="text-[#3F3F46]">
+              <div className="text-[#3F3F46]"
+              key={index}
+              >
                 <div
                   className={`text-[16px] leading-[24px] ${archivo.className}`}
-                  key={index}
                 >
                   {topic.text}
                   <br />

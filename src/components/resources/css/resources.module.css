@@ -78,6 +78,7 @@
   }
   .Frame_img {
     width: 100%;
+    min-height: 260px;
     object-fit: cover;
     object-position: center;
   }

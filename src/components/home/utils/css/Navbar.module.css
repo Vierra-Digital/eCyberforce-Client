@@ -1,2 +1,12 @@
 .Container {
 }
+
+.button{
+    background: linear-gradient(103.45deg, #9747ff 34.87%, #0171c9 87.14%);
+    color: white;
+    border-radius: 4px;
+    width: 125px;
+    height: 50px;
+    padding: 10px;
+    font-weight: bold;
+}

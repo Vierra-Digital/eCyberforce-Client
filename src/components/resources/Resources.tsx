@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Frame_img from "./img/Frame_image.png";
+import Frame_img from "./img/Frame_image.jpg";
 import styles from "./css/resources.module.css";
 import Vector from "./img/Vector.svg";
 

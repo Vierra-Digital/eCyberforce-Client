@@ -12,7 +12,7 @@
 }
 @media screen and (max-width: 800px) {
   .container {
-    width: 90%;
+    max-width: 93%;
   }
 }
 @media screen and (max-width: 300px) {
@@ -94,16 +94,21 @@
 
 .image_container {
   width: 100%;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 80px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.image_container .img {
-  height: clamp(200px, 9vw, 300px);
+.image_container img {
+  height: 600px;
 }
-
+@media screen and (max-width: 500px) {
+  .image_container img {
+    max-width: 110% !important;
+    height: 300px;
+  }
+}
 .p {
   margin-top: 5px;
   font-family: var(--Sora);

@@ -1,10 +1,11 @@
 import Monitoring from "@/components/assistant/Monitoring";
-import React from "react";
+import Footer from "@/components/home/utils/Footer";
 
 function Page() {
   return (
     <div>
       <Monitoring />
+      <Footer />
     </div>
   );
 }

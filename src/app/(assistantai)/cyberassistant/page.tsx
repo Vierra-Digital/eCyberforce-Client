@@ -1,4 +1,4 @@
-import Assistant from "@/components/assistant/css/Assistant";
+import Assistant from "@/components/assistant/Assistant";
 import React from "react";
 
 function Page() {

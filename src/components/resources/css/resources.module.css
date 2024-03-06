@@ -23,7 +23,7 @@
 /* Frame Iimg */
 .Frame_img {
   margin: 0 auto;
-  max-height: 460px;
+  max-height: 600px;
 }
 
 /* header */
@@ -116,11 +116,13 @@
   background-color: #fff;
 }
 .cards .card:nth-child(2) button {
+  color: #fff;
   border: none;
   gap: 10px;
   background-color: #0171c9;
 }
 .cards .card:nth-child(3) button {
+  color: #fff;
   border: none;
   gap: 10px;
   background: linear-gradient(103.45deg, #9747ff 34.87%, #0171c9 87.14%);

@@ -1,7 +1,12 @@
+import Assistant from "@/components/assistant/css/Assistant";
 import React from "react";
 
 function Page() {
-  return <div>Page</div>;
+  return (
+    <div>
+      <Assistant />
+    </div>
+  );
 }
 
 export default Page;

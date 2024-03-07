@@ -1,7 +1,13 @@
-import React from "react";
+import Cloud from "@/components/resources/other/Cloud";
+import Footer from "@/components/home/utils/Footer";
 
 function Page() {
-  return <div>Page</div>;
+  return (
+    <div>
+      <Cloud />
+      <Footer />
+    </div>
+  );
 }
 
 export default Page;

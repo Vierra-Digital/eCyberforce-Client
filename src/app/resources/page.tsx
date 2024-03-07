@@ -1,10 +1,13 @@
 import Resources from "@/components/resources/Resources";
 import Footer from "@/components/home/utils/Footer";
+import Navbar from "@/components/home/utils/Navbar";
 
 function Page() {
   return (
     <div>
-      <Resources /> <Footer />
+      <Navbar />
+      <Resources />
+      <Footer />
     </div>
   );
 }

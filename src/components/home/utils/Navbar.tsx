@@ -41,9 +41,9 @@ function Navbar() {
                 <path
                   d="M1.25 1.66667L4.375 5L7.5 1.66667"
                   stroke="#18181B"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </Link>
@@ -71,9 +71,9 @@ function Navbar() {
                 <path
                   d="M1.375 1.66667L4.5 5L7.625 1.66667"
                   stroke="black"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>
@@ -115,9 +115,9 @@ function Navbar() {
                     <path
                       d="M1.375 1.66667L4.5 5L7.625 1.66667"
                       stroke="#18181B"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 )}

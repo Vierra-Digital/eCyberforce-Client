@@ -1,7 +1,13 @@
-import React from "react";
+import Footer from "@/components/home/utils/Footer";
+import Datacenter from "@/components/resources/other/Datacenter";
 
 function Page() {
-  return <div>Page</div>;
+  return (
+    <div>
+      <Datacenter />
+      <Footer />
+    </div>
+  );
 }
 
 export default Page;

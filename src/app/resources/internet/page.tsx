@@ -1,7 +1,13 @@
-import React from "react";
+import Internet from "@/components/resources/other/Internet";
+import Footer from "@/components/home/utils/Footer";
 
 function Page() {
-  return <div>Page</div>;
+  return (
+    <div>
+      <Internet />
+      <Footer />
+    </div>
+  );
 }
 
 export default Page;

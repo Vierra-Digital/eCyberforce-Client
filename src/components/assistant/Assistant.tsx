@@ -6,7 +6,7 @@ import image_assistant from "./img/image_assistant.png";
 function Assistant() {
   return (
     <div>
-      <div className={styles.container}>
+      <div className={styles.container} style={{ marginTop: "75px" }}>
         <div className={styles.header}>
           <h6>Our (SaaS) Products</h6>
           <div className={styles.title}>

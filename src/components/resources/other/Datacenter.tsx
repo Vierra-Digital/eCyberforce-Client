@@ -8,7 +8,7 @@ import Rectangle_4_2 from "./img/Rectangle_4_2.png";
 function Datacenter() {
   return (
     <div>
-      <div className={styles.container}>
+      <div className={styles.container} style={{ marginTop: "150px" }}>
         <div className={styles.header}>
           <h6>Our (SaaS) Products</h6>
           <div className={styles.title}>

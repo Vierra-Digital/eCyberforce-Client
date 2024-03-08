@@ -10,7 +10,10 @@ const sora = Sora({
 
 export default function Releases() {
   return (
-    <div className="flex items-center justify-center flex-col pt-[64px] mb-10">
+    <div
+      className="flex items-center justify-center flex-col pt-[64px] mb-10"
+      style={{ marginTop: "150px" }}
+    >
       <div className="text-center flex flex-col gap-[24px] mb-10">
         <h3
           className={`text-[14px] text-[#8C26FF] font-medium ${sora.className}`}
@@ -49,8 +52,8 @@ export default function Releases() {
               </p>
             </div>
           </div>
-          <Infos title="What's New" Info={WhatsNewInfo}/>
-          <Infos title="Bug Fixes" Info={BugFixInfo}/>
+          <Infos title="What's New" Info={WhatsNewInfo} />
+          <Infos title="Bug Fixes" Info={BugFixInfo} />
         </div>
 
         <div className="flex gap-[9px] items-center w-[98%] lg:w-[802px] h-[109px] px-[24px] py-[48px] border border-[#EAE9F7] mb-4 mt-4">
@@ -77,5 +80,3 @@ export default function Releases() {
     </div>
   );
 }
-
-

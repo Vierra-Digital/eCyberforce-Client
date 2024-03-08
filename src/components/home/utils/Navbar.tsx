@@ -16,10 +16,14 @@ function Navbar() {
   const handleClick = () => {
     setClicked(!clicked);
   };
-  const scroll = useScroll()
+  const scroll = useScroll();
   return (
-    <div className={`bg-transparent pt-8 fixed top-0 left-0 w-full backdrop-blur-[8px] z-[9999] ${scroll ? "shadow-md" : ""}`}>
-      {clicked && <Sidebar onClick={handleClick} isclicked={clicked}/>}
+    <div
+      className={`bg-transparent pt-8 fixed top-0 left-0 w-full backdrop-blur-[8px] z-[9999] ${
+        scroll ? "shadow-md" : ""
+      }`}
+    >
+      {clicked && <Sidebar onClick={handleClick} isclicked={clicked} />}
       <div className="2sm:px-[64px] px-[32px] gap-[24px] flex flex-col">
         <div className="flex items-center justify-between px-[16px]">
           <button className="flex 2sm:hidden" onClick={handleClick}>
@@ -99,7 +103,7 @@ function Navbar() {
         <div className="2sm:flex items-center justify-center hidden">
           <div className="flex items-center gap-[30px]">
             {NavbarLinks.map((link) => (
-              <div key={link.key} className="flex items-center gap-1">
+              <div key={link.key} className="flex items-center gap-1 pb-[10px]">
                 <Link
                   href={link.url}
                   className={`text-[16px] tracking-wide ${sora.className}`}
@@ -136,7 +140,12 @@ export default Navbar;
 
 const NavbarLinks = [
   { text: "Home", url: "/", key: "Home" },
-  { text: "Products & Services", url: "/products", key: "product", img: "true" },
+  {
+    text: "Products & Services",
+    url: "/products",
+    key: "product",
+    img: "true",
+  },
   { text: "Releases", url: "/releases", key: "releases" },
   { text: "Resources", url: "/resources", key: "resources", img: "true" },
 ];

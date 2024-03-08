@@ -24,7 +24,10 @@ type LegalProps = {
 
 export default function Legal({ type, Info }: LegalProps) {
   return (
-    <div className="flex items-center justify-center pt-[64px] mb-14">
+    <div
+      className="flex items-center justify-center pt-[64px] mb-14"
+      style={{ marginTop: "150px" }}
+    >
       <div className="flex flex-col items-center justify-center">
         <h3 className={`text-[#8C26FF] text-[14px] ${sora.className}`}>
           Legal
@@ -49,9 +52,7 @@ export default function Legal({ type, Info }: LegalProps) {
               {info.title ? info.title : null}
             </h4>
             {info.context.map((topic, index) => (
-              <div className="text-[#3F3F46]"
-              key={index}
-              >
+              <div className="text-[#3F3F46]" key={index}>
                 <div
                   className={`text-[16px] leading-[24px] ${archivo.className}`}
                 >

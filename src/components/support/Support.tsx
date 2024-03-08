@@ -7,7 +7,10 @@ import Facebook from "./img/icone_Facebook.svg";
 function Support() {
   return (
     <>
-      <div className="flex flex-col lg:flex-row my-16 items-center lg:gap-5 gap-9 lg:w-[90%] w-[95%] sm:w-[60%] mx-auto">
+      <div
+        className="flex flex-col lg:flex-row my-16 items-center lg:gap-5 gap-9 lg:w-[90%] w-[95%] sm:w-[60%] mx-auto"
+        style={{ marginTop: "170px" }}
+      >
         <div className="flex gap-2 flex-col w-[100%] lg:w-[50%] xl:w-[45%]  lg:mx-0">
           <div className="flex flex-col gap-5 lg:max-w-[70%] w-full">
             <h1 className="font-Sora text-[24px] md:text-[48px] font-[600] leading-[24px] md:leading-[40px] text-[#18181B]">

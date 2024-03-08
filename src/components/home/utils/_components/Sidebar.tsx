@@ -44,12 +44,29 @@ export default function Sidebar({ onClick , isclicked}: SideProps) {
           {SideBarUrl.map((item, index) => {
             return (
               <Link key={index} href={item.url} className="flex my-1 mx-4">
-                <div className="flex items-center justify-center text-center">
+                <div className="flex items-center justify-center text-center gap-2">
                   <h2
                     className={`text-[rgb(63,65,70)] font-bold text-lg mt-4 ${sora.className}`}
                   >
                     {item.text}
                   </h2>
+                  {item.icon && 
+                  <svg
+                    width="9"
+                    height="6"
+                    viewBox="0 0 9 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="mt-4"
+                  >
+                    <path
+                      d="M1.375 1.66667L4.5 5L7.625 1.66667"
+                      stroke="#18181B"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>}
                 </div>
               </Link>
             );
@@ -79,7 +96,7 @@ const SideBarUrl = [
   {
     url: "/products",
     text: "Products & Services",
-    icon: "",
+    icon: "/arrow.svg",
   },
   {
     url: "/releases",
@@ -89,6 +106,6 @@ const SideBarUrl = [
   {
     url: "/resources",
     text: "Recources",
-    icon: "",
+    icon: "/arrow.svg",
   },
 ];

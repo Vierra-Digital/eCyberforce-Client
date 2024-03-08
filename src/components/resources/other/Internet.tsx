@@ -2,13 +2,13 @@ import Image from "next/image";
 import styles from "./css/internet.module.css";
 
 // images
-import Rectangle_1_1 from "./img/Rectangle_1_1.png";
+import Rectangle_1_1 from "./img/Rectangle_3_2.png";
 import Rectangle_1_2 from "./img/Rectangle_1_2.png";
 
 function Internet() {
   return (
     <div>
-      <div className={styles.container}>
+      <div className={styles.container} style={{ marginTop: "170px" }}>
         <div className={styles.header}>
           <h6>Our (SaaS) Products</h6>
           <div className={styles.title}>

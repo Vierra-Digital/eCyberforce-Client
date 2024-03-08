@@ -8,7 +8,7 @@ import Rectangle_3_2 from "./img/Rectangle_3_2.png";
 function Sandbox() {
   return (
     <div>
-      <div className={styles.container}>
+      <div className={styles.container} style={{ marginTop: "170px" }}>
         <div className={styles.header}>
           <h6>Our (SaaS) Products</h6>
           <div className={styles.title}>

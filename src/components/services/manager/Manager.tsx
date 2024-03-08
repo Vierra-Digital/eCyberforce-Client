@@ -10,7 +10,10 @@ const sora = Sora({
 
 export default function Manager() {
   return (
-    <div className="flex flex-col items-center justify-center pt-[64px] mb-14 gap-[52px]">
+    <div
+      className="flex flex-col items-center justify-center pt-[64px] mb-14 gap-[52px]"
+      style={{ marginTop: "150px" }}
+    >
       <div className="text-center flex flex-col gap-[24px] items-center">
         <h4
           className={`text-[#8C26FF] text-[14px] font-medium ${sora.className}`}
@@ -55,7 +58,7 @@ export default function Manager() {
             className="flex"
           />
         </div>
-         <div className="flex items-center justify-center px-2">
+        <div className="flex items-center justify-center px-2">
           <p
             className={` sm:w-[492px] w-full text-[14px] leading-[24px] text-[#000000] ${sora.className}`}
           >
@@ -63,8 +66,7 @@ export default function Manager() {
             DELIVERY FROM WIRELESS ACCESS TO CLOUD SERVICES PROVIDER IN THE
             GLOBAL INTERNET
           </p>
-         </div>
-       
+        </div>
       </div>
       <div className="flex flex-col items-center justify-center gap-[10px]">
         <div className="lg:w-[749px] lg:h-[420px] w-[351px] h-[220px]">
@@ -76,7 +78,7 @@ export default function Manager() {
             className="flex"
           />
         </div>
-       <div className="flex items-center justify-center px-2">
+        <div className="flex items-center justify-center px-2">
           <p
             className={`w-[90%] sm:w-[492px] text-[14px] leading-[24px] text-[#000000] ${sora.className}`}
           >
@@ -84,8 +86,7 @@ export default function Manager() {
             DELIVERY FROM WIRELESS ACCESS TO CLOUD SERVICES PROVIDER IN THE
             GLOBAL INTERNET
           </p>
-       </div>
-       
+        </div>
       </div>
       <div className="flex flex-col items-center justify-center gap-[10px] px-2">
         <div className="lg:w-[749px] lg:h-[420px] w-[351px] h-[220px]">
@@ -106,7 +107,6 @@ export default function Manager() {
             GLOBAL INTERNET
           </p>
         </div>
-       
       </div>
     </div>
   );

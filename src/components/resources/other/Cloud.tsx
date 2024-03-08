@@ -7,7 +7,7 @@ import Rectangle_2 from "./img/Rectangle_2.png";
 function Cloud() {
   return (
     <div>
-      <div className={styles.container}>
+      <div className={styles.container} style={{ marginTop: "150px" }}>
         <div className={styles.header}>
           <h6>Our (SaaS) Products</h6>
           <div className={styles.title}>

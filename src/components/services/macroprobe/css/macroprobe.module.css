@@ -221,6 +221,9 @@
   .content .marc {
     width: 100%;
   }
+  .subscribe {
+    margin: auto;
+  }
 }
 @media screen and (max-width: 600px) {
   .subscribe button {

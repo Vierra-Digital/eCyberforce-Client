@@ -18,6 +18,7 @@ function Sandbox() {
         <div className={styles.content}>
           <div className={styles.first_img}>
             <Image src={Rectangle_3_1} alt="" />
+
             <button>Load Sandbox</button>
             <p>
               This is real Wireless Traffic. Try out the Machine Learning

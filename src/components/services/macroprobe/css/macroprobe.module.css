@@ -1,0 +1,229 @@
+.container {
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 93%;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .container {
+    width: 97%;
+  }
+}
+/* header */
+.header h6 {
+  font-family: var(--Sora);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 42px;
+  color: #8c26ff;
+  text-align: center;
+}
+.image_main {
+  width: 740px !important;
+}
+@media screen and (max-width: 750px) {
+  .image_main {
+    width: 160% !important;
+  }
+}
+.header .title {
+  margin-bottom: 10px;
+}
+.header .title h2 {
+  font-family: var(--Sora);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #18181b;
+  text-align: center;
+}
+@media screen and (max-width: 750px) {
+  .header .title h2 {
+    font-size: 24px;
+  }
+}
+.header .images {
+  display: flex;
+  align-items: center;
+}
+.header .images div {
+  width: 50%;
+}
+.header .images div img {
+  height: 400px;
+  width: 740px;
+  object-fit: cover;
+}
+.header .images div p {
+  font-family: var(--Sora);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+@media screen and (max-width: 750px) {
+  .header .images .img_one {
+    width: 100%;
+  }
+  .header .images .img_two {
+    display: none;
+  }
+}
+.content {
+  display: flex;
+  gap: 16px;
+}
+
+.content .marc {
+  width: 60%;
+}
+.content .marc .title h3 {
+  font-family: var(--Sora);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 42px;
+  color: #8c26ff;
+}
+.content .marc h5 {
+  margin: 20px 0;
+  font-family: var(--Sora);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #18181b;
+}
+.content .marc p {
+  font-family: var(--Sora);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #3f3f46;
+}
+.content .marc p span {
+  font-family: var(--Sora);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #18181b;
+}
+.content .marc .text_ma {
+  margin: 20px 0;
+}
+.content .marc .Features {
+  margin: 20px 0;
+  font-family: var(--Sora);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #0171c9;
+}
+.content .marc .media {
+  display: flex;
+  gap: 5px;
+}
+.list {
+  margin: 15px 0;
+}
+.list ul {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.list ul li {
+  display: flex;
+  gap: 6px;
+}
+.chow_more {
+  display: flex;
+  gap: 8px;
+  font-family: var(--Sora);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #0171c9;
+}
+.subscribe h2 {
+  margin-bottom: 10px;
+  font-family: var(--Sora);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 42px;
+}
+.subscribe h2 span {
+  font-family: var(--Sora);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42px;
+  color: #0171c9;
+}
+.subscribe .one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0171c9;
+  font-family: var(--Sora);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  width: 423px;
+  height: 281;
+  gap: 5px;
+  padding: 25px 0;
+  border-radius: 4px;
+  color: #0171c9;
+}
+.subscribe .sub {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--Sora);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  width: 423px;
+  height: 281;
+  gap: 5px;
+  padding: 25px 0;
+  border-radius: 4px;
+  border: 1px solid #eae9f7;
+}
+.subscribe .add {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--Sora);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  width: 423px;
+  height: 281;
+  gap: 5px;
+  padding: 25px 0;
+  border-radius: 4px;
+  background-color: #191919;
+  color: #fff;
+}
+@media screen and (max-width: 900px) {
+  .content {
+    flex-direction: column;
+  }
+  .content .marc {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .subscribe button {
+    width: 100% !important;
+  }
+}

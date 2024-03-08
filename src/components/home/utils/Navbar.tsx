@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Sidebar from "./_components/Sidebar";
 import { Sora } from "next/font/google";
+import { useScroll } from "./hook/usescroll";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -15,9 +16,10 @@ function Navbar() {
   const handleClick = () => {
     setClicked(!clicked);
   };
+  const scroll = useScroll()
   return (
-    <div className="bg-transparent mt-8">
-      {clicked && <Sidebar onClick={handleClick} />}
+    <div className={`bg-transparent pt-8 fixed top-0 left-0 w-full backdrop-blur-[8px] z-[9999] ${scroll ? "shadow-md" : ""}`}>
+      {clicked && <Sidebar onClick={handleClick} isclicked={clicked}/>}
       <div className="2sm:px-[64px] px-[32px] gap-[24px] flex flex-col">
         <div className="flex items-center justify-between px-[16px]">
           <button className="flex 2sm:hidden" onClick={handleClick}>
@@ -134,7 +136,7 @@ export default Navbar;
 
 const NavbarLinks = [
   { text: "Home", url: "/", key: "Home" },
-  { text: "Products & Services", url: "/", key: "product", img: "true" },
-  { text: "Releases", url: "/", key: "releases" },
-  { text: "Resources", url: "/", key: "resources", img: "true" },
+  { text: "Products & Services", url: "/products", key: "product", img: "true" },
+  { text: "Releases", url: "/releases", key: "releases" },
+  { text: "Resources", url: "/resources", key: "resources", img: "true" },
 ];

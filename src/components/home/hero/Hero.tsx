@@ -14,7 +14,7 @@ const plus = Plus_Jakarta_Sans({
 function Hero() {
   return (
     <div className={styles.Container}>
-      <div className="pt-[64px] mb-4">
+      <div className="2sm:pt-60 pt-32 mb-4">
         <div className="flex items-center justify-center">
           <div className="hidden 2sm:flex absolute left-[12%]">
             <Image 

@@ -142,7 +142,7 @@ const NavbarLinks = [
   { text: "Home", url: "/", key: "Home" },
   {
     text: "Products & Services",
-    url: "/products",
+    url: "/services",
     key: "product",
     img: "true",
   },

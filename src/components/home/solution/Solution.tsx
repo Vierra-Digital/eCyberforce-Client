@@ -1,6 +1,11 @@
+"use client";
+
 import styles from "./css/Solution.module.css";
 import Icon from "./img/Icon.svg";
 import Image from "next/image";
+
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 const context = [
   {
@@ -29,6 +34,24 @@ const context = [
   },
 ];
 
+function Animation({ children, className = "" }: any) {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
+  return (
+    <div
+      className={className}
+      ref={ref}
+      style={{
+        transform: inView ? "none" : "translateY(-100px)",
+        opacity: inView ? 1 : 0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+      }}
+    >
+      {children}
+    </div>
+  );
+}
+
 function Solution() {
   return (
     <div className={styles.container}>
@@ -43,10 +66,10 @@ function Solution() {
       </div>
       <div className={styles.Contents}>
         {context.map((item, index) => (
-          <div key={index} className={styles.Content}>
+          <Animation key={index} className={styles.Content}>
             <h2>{item.title}</h2>
             <p>{item.text}</p>
-          </div>
+          </Animation>
         ))}
       </div>
       <div className={styles.more}>

@@ -1,11 +1,28 @@
+"use client";
+
 import styles from "./css/Products.module.css";
 import Image from "next/image";
 import image_removebg from "./img/removebg.png";
 import Icon from "./img/Icon.svg";
 
+import { useInView, motion } from "framer-motion";
+import { useRef } from "react";
+
 function Products() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <div className={styles.container}>
+    <motion.div
+      ref={ref}
+      animate={{ y: isInView ? 0 : -100, opacity: isInView ? 1 : 0 }}
+      initial={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 2,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
+      className={styles.container}
+    >
       <div className={styles.header}>
         <h6>Our Products</h6>
         <div className={styles.title}>
@@ -77,7 +94,7 @@ function Products() {
           View All Products <Image src={Icon} width={10} height={10} alt="" />
         </h3>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

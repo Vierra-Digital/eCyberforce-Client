@@ -1,11 +1,29 @@
+"use client";
+
 import Image from "next/image";
 import Vector from "./img/Vector.svg";
 import Cyber from "./img/cyber-security.png";
 import Icon from "./img/Icon.svg";
 import styles from "./css/Service.module.css";
+
+import { useInView, motion } from "framer-motion";
+import { useRef } from "react";
+
 function Service() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <div className={styles.container}>
+    <motion.div
+      ref={ref}
+      animate={{ y: isInView ? 0 : -100, opacity: isInView ? 1 : 0 }}
+      initial={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 2,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
+      className={styles.container}
+    >
       <div className={styles.header}>
         <h6>Our Service</h6>
         <div className={styles.title}>
@@ -74,7 +92,7 @@ function Service() {
           Learn More <Image src={Icon} width={10} height={10} alt="" />
         </h3>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

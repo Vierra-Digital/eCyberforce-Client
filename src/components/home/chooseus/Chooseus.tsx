@@ -1,14 +1,30 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./css/Chooseus.module.css";
 import { Sora } from "next/font/google";
+
+import { useInView, motion } from "framer-motion";
+import { useRef } from "react";
 
 const sora = Sora({
   subsets: ["latin"],
   weight: ["500"],
 });
 function Chooseus() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <div>
+    <motion.div
+      ref={ref}
+      animate={{ y: isInView ? 0 : -100, opacity: isInView ? 1 : 0 }}
+      initial={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 2,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
+    >
       <div className="flex flex-col items-center justify-center gap-[32px]">
         <div className="gap-[24px] flex flex-col text-center justify-center items-center">
           <h3 className={`text-[#8C26FF] text-[14px] ${sora.className}`}>
@@ -34,7 +50,7 @@ function Chooseus() {
           <Image src="/choose.svg" alt="choose" width={1008} height={648} />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

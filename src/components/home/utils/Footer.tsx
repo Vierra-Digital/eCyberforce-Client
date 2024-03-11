@@ -91,26 +91,37 @@ const FooterLinks = [
   {
     topic: "Company",
     links: [
-      { text: "About", url: "/", key: "About" },
-      { text: "Contact us", url: "/", key: "Contact us" },
-      { text: "Releases", url: "/", key: "Releases" },
+      { text: "About", url: "/about", key: "About" },
+      { text: "Contact us", url: "/support", key: "Contact us" },
+      { text: "Releases", url: "/releases", key: "Releases" },
     ],
   },
   {
     topic: "Products",
     links: [
-      { text: "MacroProbe v1.3", url: "/", key: "MacroProbe v1.3" },
-      { text: "Global Manager v1.3", url: "/", key: "Global Manager v1.3" },
-      { text: "Consulting Service", url: "/", key: "Consulting Service" },
-      { text: "Consulting Service", url: "/", key: "Consulting Service" },
       {
-        text: "MacroProbe v1.3(Core License)",
-        url: "/",
+        text: "MacroProbe v1.3",
+        url: "/services/macroprobe",
+        key: "MacroProbe v1.3",
+      },
+      {
+        text: "Global Manager v1.3",
+        url: "/services/probemanager",
+        key: "Global Manager v1.3",
+      },
+      {
+        text: "Consulting Service",
+        url: "/services/consulting",
+        key: "Consulting Service",
+      },
+      {
+        text: "MacroProbe v1.3 (Core License)",
+        url: "/services/corelicense",
         key: "MacroProbe v1.3(Core License)",
       },
       {
-        text: "MacroProbe v1.3(Distribution License)",
-        url: "/",
+        text: "MacroProbe v1.3 (Distribution License)",
+        url: "/services/corelicense",
         key: "MacroProbe v1.3(Distribution License)",
       },
     ],
@@ -118,19 +129,35 @@ const FooterLinks = [
   {
     topic: "Resources",
     links: [
-      { text: "Windows Support", url: "/", key: "Windows Support" },
-      { text: "Recommended Hardware", url: "/", key: "Recommended Hardware" },
-      { text: "Cloud", url: "/", key: "Cloud" },
-      { text: "Data Center", url: "/", key: "Data Center" },
-      { text: "Internet and Wireless", url: "/", key: "Internet and Wireless" },
+      {
+        text: "Windows Support",
+        url: "/resources",
+        key: "Windows Support",
+      },
+      {
+        text: "Recommended Hardware",
+        url: "/resources/cloud",
+        key: "Recommended Hardware",
+      },
+      { text: "Cloud", url: "/resources/cloud", key: "Cloud" },
+      { text: "Data Center", url: "/resources/datacenter", key: "Data Center" },
+      {
+        text: "Internet and Wireless",
+        url: "/resources/internet",
+        key: "Internet and Wireless",
+      },
     ],
   },
   {
     topic: "Legal",
     links: [
-      { text: "Legal Notice", url: "/", key: "Legal Notice" },
-      { text: "Privacy Policy", url: "/", key: "Privacy Policy" },
-      { text: "Terms of Use", url: "/", key: "Terms of Use" },
+      { text: "Legal Notice", url: "/about/terms", key: "Legal Notice" },
+      {
+        text: "Privacy Policy",
+        url: "/about/privacypolicy",
+        key: "Privacy Policy",
+      },
+      { text: "Terms of Use", url: "/about/terms", key: "Terms of Use" },
     ],
   },
 ];

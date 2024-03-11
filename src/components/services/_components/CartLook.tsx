@@ -7,9 +7,9 @@ const sora = Sora({
 });
 
 type PriceProps = {
-    price: number
-}
-export default function CartLook({price} : PriceProps) {
+  price: number;
+};
+export default function CartLook({ price }: PriceProps) {
   return (
     <div className="flex flex-col gap-[10px] w-full">
       <div className="flex gap-2 items-center">
@@ -18,7 +18,9 @@ export default function CartLook({price} : PriceProps) {
         >
           ${price}.00
         </h2>
-        <h3 className={`text-[24px] text-nowrap ${sora.className}`}>in stock</h3>
+        <h3 className={`text-[24px] text-nowrap ${sora.className}`}>
+          in stock
+        </h3>
       </div>
       <button className="flex gap-2 items-center justify-center ring-1 rounded-[4px] p-[10px] w-full h-[61px] ring-[#0171C9]">
         <svg
@@ -29,13 +31,15 @@ export default function CartLook({price} : PriceProps) {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M11.5 0.902344C8.68955 0.902344 5.99422 2.01879 4.00693 4.00607C2.01964 5.99336 0.903198 8.6887 0.903198 11.4991C0.903198 14.3096 2.01964 17.0049 4.00693 18.9922C5.99422 20.9795 8.68955 22.0959 11.5 22.0959C14.3104 22.0959 17.0058 20.9795 18.9931 18.9922C20.9804 17.0049 22.0968 14.3096 22.0968 11.4991C22.0968 8.6887 20.9804 5.99336 18.9931 4.00607C17.0058 2.01879 14.3104 0.902344 11.5 0.902344ZM2.4232 11.4991C2.4232 9.09183 3.3795 6.78311 5.08173 5.08088C6.78396 3.37865 9.09268 2.42234 11.5 2.42234C13.9073 2.42234 16.216 3.37865 17.9183 5.08088C19.6205 6.78311 20.5768 9.09183 20.5768 11.4991C20.5768 13.9065 19.6205 16.2152 17.9183 17.9174C16.216 19.6196 13.9073 20.5759 11.5 20.5759C9.09268 20.5759 6.78396 19.6196 5.08173 17.9174C3.3795 16.2152 2.4232 13.9065 2.4232 11.4991ZM11.5 14.6991C12.3487 14.6991 13.1626 14.362 13.7627 13.7619C14.3629 13.1618 14.7 12.3478 14.7 11.4991C14.7 10.6505 14.3629 9.83652 13.7627 9.2364C13.1626 8.63629 12.3487 8.29914 11.5 8.29914C10.6513 8.29914 9.83737 8.63629 9.23726 9.2364C8.63714 9.83652 8.3 10.6505 8.3 11.4991C8.3 12.3478 8.63714 13.1618 9.23726 13.7619C9.83737 14.362 10.6513 14.6991 11.5 14.6991Z"
             fill="#0171C9"
           />
         </svg>
-        <p className={`text-[#0171C9] text-[14px] ${sora.className}`}>One time Purchase</p>
+        <p className={`text-[#0171C9] text-[14px] ${sora.className}`}>
+          One time Purchase
+        </p>
       </button>
       <button className="flex gap-2 items-center justify-center ring-1 rounded-[4px] p-[10px] w-full h-[61px] ring-[#EAE9F7]">
         <svg
@@ -46,17 +50,21 @@ export default function CartLook({price} : PriceProps) {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M11.5 0.902344C8.68955 0.902344 5.99422 2.01879 4.00693 4.00607C2.01964 5.99336 0.903198 8.6887 0.903198 11.4991C0.903198 14.3096 2.01964 17.0049 4.00693 18.9922C5.99422 20.9795 8.68955 22.0959 11.5 22.0959C14.3104 22.0959 17.0058 20.9795 18.9931 18.9922C20.9804 17.0049 22.0968 14.3096 22.0968 11.4991C22.0968 8.6887 20.9804 5.99336 18.9931 4.00607C17.0058 2.01879 14.3104 0.902344 11.5 0.902344ZM2.4232 11.4991C2.4232 9.09183 3.3795 6.78311 5.08173 5.08088C6.78396 3.37865 9.09268 2.42234 11.5 2.42234C13.9073 2.42234 16.216 3.37865 17.9183 5.08088C19.6205 6.78311 20.5768 9.09183 20.5768 11.4991C20.5768 13.9065 19.6205 16.2152 17.9183 17.9174C16.216 19.6196 13.9073 20.5759 11.5 20.5759C9.09268 20.5759 6.78396 19.6196 5.08173 17.9174C3.3795 16.2152 2.4232 13.9065 2.4232 11.4991ZM11.5 14.6991C12.3487 14.6991 13.1626 14.362 13.7627 13.7619C14.3629 13.1618 14.7 12.3478 14.7 11.4991C14.7 10.6505 14.3629 9.83652 13.7627 9.2364C13.1626 8.63629 12.3487 8.29914 11.5 8.29914C10.6513 8.29914 9.83737 8.63629 9.23726 9.2364C8.63714 9.83652 8.3 10.6505 8.3 11.4991C8.3 12.3478 8.63714 13.1618 9.23726 13.7619C9.83737 14.362 10.6513 14.6991 11.5 14.6991Z"
             fill="#EAE9F7"
           />
         </svg>
-        <p className={`text-[#3F3F46] text-[14px] ${sora.className}`}>Subscribe</p>
+        <p className={`text-[#3F3F46] text-[14px] ${sora.className}`}>
+          Subscribe
+        </p>
       </button>
 
       <button className="flex gap-2 items-center justify-center  rounded-[4px] p-[10px] w-full  h-[61px] bg-[#18181B] border border-[#191919]">
-        <p className={`text-white text-[14px] ${sora.className}`}>Add to cart</p>
+        <p className={`text-white text-[14px] ${sora.className}`}>
+          Add to cart
+        </p>
       </button>
     </div>
   );

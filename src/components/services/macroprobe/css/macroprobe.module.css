@@ -125,7 +125,7 @@
 }
 .content .marc .media {
   display: flex;
-  gap: 5px;
+  gap: 65px;
 }
 .list {
   margin: 15px 0;

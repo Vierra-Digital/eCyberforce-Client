@@ -102,9 +102,9 @@ function Hero() {
         >
           <Swiper
             className={styles.review}
-            slidesPerView={3}
+            slidesPerView={2}
             spaceBetween={50}
-            direction={"vertical"}
+            direction={"horizontal"}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
@@ -112,6 +112,12 @@ function Hero() {
             loop={true}
             modules={[Autoplay, Pagination, Navigation]}
             onSlideChange={handleSlideChange}
+            breakpoints={{
+              786: {
+                direction: "vertical",
+                slidesPerView: 3,
+              }
+            }}
           >
             <SwiperSlide>
               <Review  isActive = {activeIndex === 0} isTwoAfterActive={calculateIsTwoAfterActive(0)} />

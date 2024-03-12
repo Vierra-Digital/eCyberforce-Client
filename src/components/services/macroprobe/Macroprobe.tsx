@@ -33,7 +33,7 @@ function Macroprobe() {
             <Image src={Rectangle__2} alt="" />
             <p>APPLICATION PERFORMANCE ANOMALY</p>
           </div>
-        </div>{" "}
+        </div>
         <Image src={pas} alt="" width={80} style={{ margin: "40px auto" }} />
       </div>
 

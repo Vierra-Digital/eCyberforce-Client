@@ -24,7 +24,7 @@
   text-align: center;
 }
 .image_main {
-  width: 740px !important;
+  width: 700px !important;
 }
 @media screen and (max-width: 750px) {
   .image_main {
@@ -55,8 +55,8 @@
   width: 50%;
 }
 .header .images div img {
-  height: 400px;
-  width: 740px;
+  height: 450px;
+  width: 700px;
   object-fit: cover;
 }
 .header .images div p {
@@ -76,11 +76,12 @@
 }
 .content {
   display: flex;
-  gap: 16px;
+  justify-content: center;
+  gap: 15%;
 }
 
 .content .marc {
-  width: 60%;
+  width: 48%;
 }
 .content .marc .title h3 {
   font-family: var(--Sora);
@@ -216,16 +217,14 @@
 }
 @media screen and (max-width: 900px) {
   .content {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .content .marc {
     width: 100%;
   }
-  .subscribe {
-    margin: auto;
+  .content .subscribe {
+    margin-bottom: 30px;
   }
-}
-@media screen and (max-width: 600px) {
   .subscribe button {
     width: 100% !important;
   }

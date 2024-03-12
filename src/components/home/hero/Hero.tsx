@@ -102,7 +102,7 @@ function Hero() {
         >
           <Swiper
             className={styles.review}
-            slidesPerView={2}
+            slidesPerView={1}
             spaceBetween={50}
             direction={"horizontal"}
             autoplay={{
@@ -113,9 +113,20 @@ function Hero() {
             modules={[Autoplay, Pagination, Navigation]}
             onSlideChange={handleSlideChange}
             breakpoints={{
+              450: {
+                slidesPerView: 2,
+                spaceBetween: 300,
+                direction: "horizontal",
+              },
+              690: {
+                slidesPerView: 2,
+                direction: "horizontal",
+                spaceBetween: 100
+              },
               786: {
                 direction: "vertical",
                 slidesPerView: 3,
+                spaceBetween: 50
               }
             }}
           >

@@ -1,7 +1,10 @@
 "use client";
+import { useState } from "react";
+import Image from "next/image";
 import { Plus_Jakarta_Sans, Sora } from "next/font/google";
 import styles from "./css/Hero.module.css";
-import Image from "next/image";
+
+import {motion} from "framer-motion"
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -11,7 +14,6 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useSwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper/core'
 import {Review, Review2, Review3, Review4} from "./_components/Review";
-import { useState } from "react";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -87,7 +89,17 @@ function Hero() {
             <Image src="/arrow.svg" alt="arrow" width={81} height={100} />
           </div>
         </div>
-        <div className={styles.reviewContainer}>
+
+        <motion.div 
+        className={styles.reviewContainer}
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{
+          duration: 2,
+          delay: 0.1,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        >
           <Swiper
             className={styles.review}
             slidesPerView={3}
@@ -114,7 +126,8 @@ function Hero() {
               <Review4 isActive = {activeIndex === 3} isTwoAfterActive={calculateIsTwoAfterActive(3)} />
             </SwiperSlide>
           </Swiper>
-        </div>
+        </motion.div>
+
       </div>
       
       <div className="flex w-full animate-scroll">

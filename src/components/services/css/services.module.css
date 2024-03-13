@@ -67,9 +67,12 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
 }
-.card {
+.cards .card {
   padding: 32px;
   border-radius: 24px;
+  background-color: #a0c0f1;
+}
+.cards .card:first-child {
   background-color: #a4a0f1;
 }
 .card .img {
@@ -119,6 +122,7 @@
 }
 .card .buttons .button_second {
   background: linear-gradient(103.45deg, #9747ff 34.87%, #0171c9 87.14%);
+  color: #fff;
 }
 
 @media screen and (max-width: 1200px) {

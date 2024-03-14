@@ -1,0 +1,73 @@
+.container {
+  padding-top: 180px;
+  width: 100%;
+}
+.container .model {
+  margin: 0 auto;
+  max-width: 534px;
+  padding: 32px 50px;
+  border-radius: 24px;
+  border: 1px solid #0171c9;
+  background-color: #fff;
+}
+.container .model h2 {
+  font-family: var(--Archivo);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.container .model .input {
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+.container .model p {
+  margin: 20px 0;
+  font-family: var(--Archivo);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #888e9c;
+}
+.container .model .logo {
+  margin: auto;
+}
+.container .model h3 {
+  margin: 20px 0;
+  font-family: var(--Archivo);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #18181b;
+}
+.container .model h3 span {
+  color: #8c26ff;
+}
+.container .model button {
+  width: 458px;
+  height: 61px;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 4px;
+  background-color: #191919;
+  color: #fff;
+}
+@media screen and (max-width: 785px) {
+  .container {
+    padding-top: 130px;
+  }
+  .container .model button {
+    width: 100%;
+  }
+  .container .model {
+    width: 100%;
+    padding: 32px 4%;
+    border-radius: 0;
+    border: none;
+  }
+}

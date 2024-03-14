@@ -21,7 +21,7 @@ function Login() {
           Track your future orders, checkout faster, and sync your favorites.
           Just enter your email and we’ll send you a special link that will sign
           you in instantly. An account will be automatically created for you if
-          you don’t have one yet.
+          you don ’t have one yet.
         </p>
         <div className={styles.input}>
           <Inputs idInput="email_input" label="Email" type="text" />

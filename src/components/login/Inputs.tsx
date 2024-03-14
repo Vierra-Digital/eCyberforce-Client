@@ -15,7 +15,7 @@ function Inputs({ type, label, idInput, ...res }: Iprops) {
 
   return (
     <div className={styles.container}>
-      <input className={styles.container_input}>
+      <div className={styles.container_input}>
         <label
           className={`${styles.label} ${leingt ? styles.focus : ""}`}
           htmlFor={idInput}
@@ -36,7 +36,7 @@ function Inputs({ type, label, idInput, ...res }: Iprops) {
           className={styles.input}
           type={type}
         />
-      </input>
+      </div>
     </div>
   );
 }

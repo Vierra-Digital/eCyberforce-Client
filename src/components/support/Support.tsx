@@ -8,7 +8,8 @@ function Support() {
   return (
     <>
       <div
-        className="flex flex-col lg:flex-row my-16 items-center lg:gap-5 gap-9 lg:w-[90%] w-[95%] sm:w-[60%] mx-auto"
+        className="flex flex-col lg:flex-row my-16 items-center lg:gap-5 gap-9
+         lg:w-[90%] w-[95%] sm:w-[92%] mx-auto"
         style={{ marginTop: "170px" }}
       >
         <div className="flex gap-2 flex-col w-[100%] lg:w-[50%] xl:w-[45%]  lg:mx-0">

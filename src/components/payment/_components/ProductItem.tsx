@@ -13,7 +13,7 @@ const archivo = Archivo({
 export default function ProductItem({ name }: ItemProps) {
   return (
     <div className="flex gap-[12px]">
-      <div className="flex rounded-[4px] justify-between items-center border border-[#EAE9F7] lg:w-[498px] w-full h-[72px] px-[10px] py-[12px] ">
+      <div className="flex rounded-[4px] justify-between items-center border border-[#EAE9F7] lg:w-[490px] w-full h-[72px] px-[10px] py-[12px] ">
         <div>
         <h2 className={`text-[#0171C9] text-[14px] leading-[24px]`}>Product</h2>
         <h1 className={`text-[#0171C9] text-[14px] leading-[15px]`}>{name}</h1>

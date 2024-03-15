@@ -22,7 +22,7 @@ export default function Payment() {
         {payment && 
          <Modal />
         }
-      <div className="border border-[#EAE9F7] rounded-[24px] p-[24px] gap-[24px] flex lg:flex-row flex-col items-center justify-center">
+      <div className="border border-[#EAE9F7] rounded-[24px] p-[24px] gap-[24px] flex lg:flex-row flex-col lg:items-start items-center justify-center">
         <div className="flex flex-col lg:w-[550px] xl:w-[628px] w-full">
           <h1 className={`text-[32px] text-[#18181B] ${archivo.className}`}>Payment Details</h1>
           <h4 className={`text-[14px] text-[#888E9C] ${archivo.className}`}>

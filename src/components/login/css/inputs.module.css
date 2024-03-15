@@ -37,7 +37,7 @@
   letter-spacing: 1px;
 }
 .container_input .input:focus {
-  border: 1px solid rgb(18, 18, 204);
+  border: 2px solid rgb(18, 18, 204);
 }
 .container_input .label.focus,
 .container_input:focus-within .label {
@@ -51,6 +51,5 @@
   opacity: 1;
   top: 8px;
   font-size: 12px;
-  background-color: #ffffff;
   padding: 0 5px;
 }

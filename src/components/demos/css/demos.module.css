@@ -1,0 +1,79 @@
+.header {
+  margin: 160px auto 60px auto;
+}
+@media screen and (max-width: 750px) {
+  .header {
+    margin: 100px auto 60px auto;
+  }
+}
+.header h6 {
+  font-family: var(--Sora);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  color: #8c26ff;
+}
+.header h2 {
+  font-family: var(--Sora);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  color: #18181b;
+}
+.centent {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media screen and (max-width: 400px) {
+  .centent {
+    width: 90%;
+  }
+}
+
+.centent .card {
+  width: 420px;
+  height: 420px;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: url(../img/video-im.png);
+  background-size: cover;
+  background-position: center;
+  padding: 16px;
+  border-radius: 24px;
+  background-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 15px;
+}
+.centent .card h3 {
+  font-family: var(--Sora);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #fff;
+}
+.centent .card .card_watch {
+  width: 155px;
+  display: flex;
+  padding: 16px;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #0171c9;
+  cursor: pointer;
+}
+.centent .card .card_watch h4 {
+  font-family: var(--Sora);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #0171c9;
+}

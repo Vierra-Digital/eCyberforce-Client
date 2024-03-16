@@ -26,7 +26,7 @@ export default function ProductCard({name, price} : ProductProps) {
         <div className='flex justify-between items-center lg:w-[388px] w-[311px]'>
           <div className='flex flex-col gap-[8px] w-[223px] text-white'>
             <h1 className={`text-[16px]`}>{name}</h1>
-             <h2 className={`text-[14px]`}>Software Supports on Windows 11, 10 and 8. </h2>
+             <h2 className={`text-[14px] w-[181px]`}>Software Supports on Windows 11, 10 and 8. </h2>
          </div>
          <div className='flex text-white items-center'>
           <h1 className={`text-[32px] ${sora.className}`}>${price}</h1>

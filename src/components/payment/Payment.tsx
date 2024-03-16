@@ -97,12 +97,19 @@ export default function Payment() {
           </div>
         </div>
         <div>
-        <div className="flex lg:flex-col flex-row gap-[24px] lg:w-full w-[436px] overflow-hidden items-center justify-start">
+        <div className="flex lg:flex-col flex-row gap-[24px] lg:w-full w-[436px] lg:overflow-visible overflow-x--hidden items-center justify-center lg:justify-start">
+            <div>
           <ProductCard name="MacroProbe v.1.3" price={50} />
+            </div>
+            <div className="hidden lg:flex">
           <ProductCard
             name="MacroProbe Global Manager (MGM) v1.3"
             price={1500}
           />
+            </div>
+            <div className="hidden lg:flex">
+          <ProductCard name="MacroProbe v.1.3" price={50} />
+            </div>
         </div>
         <div className="flex items-center justify-center gap-20 mt-10 lg:hidden">
             <button>

@@ -107,9 +107,6 @@ export default function Payment() {
             price={1500}
           />
             </div>
-            <div className="hidden lg:flex">
-          <ProductCard name="MacroProbe v.1.3" price={50} />
-            </div>
         </div>
         <div className="flex items-center justify-center gap-20 mt-10 lg:hidden">
             <button>

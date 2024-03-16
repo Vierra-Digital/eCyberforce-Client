@@ -2,7 +2,7 @@
 import React, { useState,useCallback} from "react";
 import ProductItem from "./_components/ProductItem";
 import Inputs from "./_components/Input";
-import { Archivo } from "next/font/google";
+import { Archivo, Sora } from "next/font/google";
 import ProductCard from "./_components/ProductCard";
 import PaySuccessModal from "./_components/Modal";
 import DropDown from "./_components/DropDown";
@@ -11,6 +11,10 @@ const archivo = Archivo({
   subsets: ["latin"],
   weight: ["400", "500"],
 });
+const sora = Sora({
+  subsets: ["latin"],
+  weight: ["400"]
+})
 
 export default function Payment() {
   const [payment, setPayment] = useState(false);
@@ -20,8 +24,8 @@ export default function Payment() {
   return (
     <div className="flex items-center justify-center mt-[170px] p-[24px]">
       {payment && <PaySuccessModal />}
-      <div className="border border-[#EAE9F7] rounded-[24px] p-[24px] gap-[24px] flex lg:flex-row flex-col-reverse lg:items-start items-center justify-center">
-        <div className="flex flex-col lg:w-[550px] xl:w-[628px] w-full">
+      <div className="border border-[#EAE9F7] rounded-[24px] lg:p-[24px] p-[10px]  gap-[24px] flex lg:flex-row flex-col-reverse lg:items-start items-center justify-center">
+        <div className="flex flex-col lg:w-[550px] xl:w-[628px] w-[80%]">
           <h1 className={`text-[32px] text-[#18181B] ${archivo.className}`}>
             Payment Details
           </h1>
@@ -90,7 +94,7 @@ export default function Payment() {
             </div>
             <DropDown />
             <button
-              className={`bg-[#18181B] rounded-[4px] px-[10px] py-[20px] mt-8 text-white mb-10 lg:mb-0`}
+              className={`bg-[#18181B] rounded-[4px] px-[10px] py-[20px] mt-8 text-white mb-10 lg:mb-0 ${sora.className}`}
               onClick={handlePayment}
             >
               Complete Payment $1500

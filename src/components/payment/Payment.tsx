@@ -1,10 +1,11 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useCallback} from "react";
 import ProductItem from "./_components/ProductItem";
 import Inputs from "./_components/Input";
 import { Archivo } from "next/font/google";
 import ProductCard from "./_components/ProductCard";
-import Modal from "./_components/Modal";
+import PaySuccessModal from "./_components/Modal";
+import DropDown from "./_components/DropDown";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -13,12 +14,12 @@ const archivo = Archivo({
 
 export default function Payment() {
   const [payment, setPayment] = useState(false);
-  const handlePayment = () => {
-    setPayment(!payment);
-  };
+  const handlePayment = useCallback(() => {
+    setPayment(prevPayment => !prevPayment);
+  }, [setPayment]);  
   return (
     <div className="flex items-center justify-center mt-[170px] p-[24px]">
-      {payment && <Modal />}
+      {payment && <PaySuccessModal />}
       <div className="border border-[#EAE9F7] rounded-[24px] p-[24px] gap-[24px] flex lg:flex-row flex-col-reverse lg:items-start items-center justify-center">
         <div className="flex flex-col lg:w-[550px] xl:w-[628px] w-full">
           <h1 className={`text-[32px] text-[#18181B] ${archivo.className}`}>
@@ -48,16 +49,16 @@ export default function Payment() {
           <div className="flex flex-col gap-[10px]">
             <ProductItem name="MACROPROBEML v1.3" />
             <ProductItem name="MacroProbe Global Manager (MGM) v1.3" />
-            <div className="flex flex-col lg:flex-row items-center gap-[12px] w-[99%]">
-              <div className=" lg:w-[350px] w-[99%]">
+            <div className="flex flex-col lg:flex-row items-center gap-[12px]">
+              <div className=" lg:w-[350px] w-full">
                 <Inputs label="Name on card" type="text" idInput="Name_input" />
               </div>
-              <div className=" lg:w-[268px] w-[99%]">
+              <div className=" lg:w-[268px] w-full">
                 <Inputs label="Expiry" type="text" idInput="Expiry_input" />
               </div>
             </div>
             <div className="flex flex-col lg:flex-row items-center gap-[12px]">
-              <div className="lg:w-[350px] w-[99%]">
+              <div className="lg:w-[350px] w-full">
                 <Inputs
                   label="Card Number"
                   type="text"
@@ -65,7 +66,7 @@ export default function Payment() {
                   icon="/master.svg"
                 />
               </div>
-              <div className="lg:w-[268px] w-[99%]">
+              <div className="lg:w-[268px] w-full">
                 <Inputs label="CVV" type="text" idInput="cvv_input" />
               </div>
             </div>
@@ -87,7 +88,7 @@ export default function Payment() {
                 <Inputs label="Zip Code" type="text" idInput="Zip_input" />
               </div>
             </div>
-            <Inputs label="Country" type="select" idInput="Country_input" />
+            <DropDown />
             <button
               className={`bg-[#18181B] rounded-[4px] px-[10px] py-[20px] mt-8 text-white mb-10 lg:mb-0`}
               onClick={handlePayment}

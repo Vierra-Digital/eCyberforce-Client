@@ -6,7 +6,7 @@ import { InputHTMLAttributes } from "react";
 
 interface Iprops
   extends Omit<InputHTMLAttributes<HTMLInputElement>, "onChange"> {
-  type: "text" | "number" | "email" | "password" | "tel" | "select";
+  type: "text" | "number" | "email" | "password" | "tel" ;
   label: string;
   idInput: string;
   icon?: string

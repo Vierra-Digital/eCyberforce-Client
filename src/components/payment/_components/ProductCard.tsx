@@ -13,7 +13,7 @@ const sora = Sora({
 export default function ProductCard({name, price} : ProductProps) {
   const backgroundColor = name === "MacroProbe Global Manager (MGM) v1.3" ? '#A0C0F1' : '#8C26FF';
   return (
-    <div className='p-[24px] rounded-[24px] lg:w-[436px] w-[331px]' style={{backgroundColor}}>
+    <div className='p-[24px] rounded-[24px] sm:w-[436px] w-[331px]' style={{backgroundColor}}>
       <div className='flex items-center justify-center flex-col gap-[24px]'>
         
         <Image 

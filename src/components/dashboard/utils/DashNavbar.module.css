@@ -2,10 +2,11 @@
   width: 240px;
   height: 100%;
   border-right: 1px solid #ededf8;
+  flex-shrink: 0;
 }
 
 .Top {
-  height: 55px;
+  height: 60px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -17,6 +18,7 @@
 .LogoImage {
   height: 70px;
   width: 75px;
+  flex-shrink: 0;
 }
 
 .ButtonWidth {
@@ -29,6 +31,11 @@
   align-items: center;
   justify-content: center;
   margin-right: 10px;
+  z-index: 999;
+  flex-shrink: 0;
+  box-shadow: -6px -1px 12px 0px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: -6px -1px 12px 0px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: -6px -1px 12px 0px rgba(0, 0, 0, 0.14);
 }
 
 .Account {

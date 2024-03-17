@@ -1,0 +1,102 @@
+.Container {
+  width: 240px;
+  height: 100%;
+  border-right: 1px solid #ededf8;
+}
+
+.Top {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  border-bottom: 1px solid #ededf8;
+}
+
+.LogoImage {
+  height: 70px;
+  width: 75px;
+}
+
+.ButtonWidth {
+  cursor: pointer;
+  border-radius: 999px;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.Account {
+  padding: 0px 20px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AccountPic {
+  height: 46px;
+  width: 46px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.AccountInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.AccountName {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.AccountEmail {
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 10px;
+  line-height: 11px;
+}
+
+.Column {
+  padding: 0px 20px;
+  margin-top: 40px;
+}
+
+.ColumnName {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 11px;
+  color: #c6c6c8;
+  letter-spacing: -2%;
+  margin-bottom: 40px;
+  cursor: default;
+}
+
+.ButtonsContainer {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  padding: 5px 0px;
+}
+
+.ButtonUrl {
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: -2%;
+  transition: color 0.3s ease-in-out;
+}

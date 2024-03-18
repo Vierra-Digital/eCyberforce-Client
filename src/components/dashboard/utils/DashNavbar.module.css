@@ -1,5 +1,4 @@
 .Container {
-  width: 240px;
   height: 100%;
   border-right: 1px solid #ededf8;
   flex-shrink: 0;
@@ -84,6 +83,10 @@
   letter-spacing: -2%;
   margin-bottom: 40px;
   cursor: default;
+  text-align: center;
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .ButtonsContainer {

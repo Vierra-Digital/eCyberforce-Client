@@ -81,13 +81,13 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 500px) {
   .container_table {
-    width: 340px;
+    width: 330px;
     overflow: scroll;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
   .container_table {
     width: 230px;
     overflow: scroll;

@@ -58,11 +58,20 @@ function DashboardNavbar() {
     transition: "width 0.3s ease",
   };
 
+  const text = {
+    display: nav ? "none" : "block",
+  };
+
+  const svg = {
+    marginLeft: nav ? "5px" : "0px",
+  };
+
   return (
     <motion.div
       className={styles.Container}
       animate={nav ? "closed" : "open"}
       variants={variants}
+      initial={{ width: "240px" }}
     >
       <div className={styles.Top}>
         <Image src={Logo} className={styles.LogoImage} alt={"Logo"} />
@@ -91,7 +100,7 @@ function DashboardNavbar() {
               onMouseEnter={() => hoverer(index, true)}
               onMouseLeave={() => hoverer(index, false)}
             >
-              <div>
+              <div style={svg}>
                 <Svgcomp
                   type={`${bop.url}`}
                   fill={hover && ind == index ? "#9538fe" : "#000000"}
@@ -101,7 +110,9 @@ function DashboardNavbar() {
                 className={styles.ButtonUrl}
                 style={{ color: hover && ind == index ? "#9538fe" : "#000000" }}
               >
-                <p className={archivo.className}>{bop.url}</p>
+                <p className={archivo.className} style={text}>
+                  {bop.url}
+                </p>
               </div>
             </div>
           ))}
@@ -117,7 +128,7 @@ function DashboardNavbar() {
               onMouseEnter={() => hoverer(index + 100, true)}
               onMouseLeave={() => hoverer(index + 100, false)}
             >
-              <div>
+              <div style={svg}>
                 <Svgcomp
                   type={`${bop.url}`}
                   fill={hover && ind == index + 100 ? "#9538fe" : "#000000"}
@@ -129,7 +140,9 @@ function DashboardNavbar() {
                   color: hover && ind == index + 100 ? "#9538fe" : "#000000",
                 }}
               >
-                <p className={archivo.className}>{bop.url}</p>
+                <p className={archivo.className} style={text}>
+                  {bop.url}
+                </p>
               </div>
             </div>
           ))}

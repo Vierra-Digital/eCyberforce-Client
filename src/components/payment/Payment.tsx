@@ -24,7 +24,7 @@ export default function Payment() {
   return (
     <div className="flex items-center justify-center mt-[170px] p-[24px]">
       {payment && <PaySuccessModal />}
-      <div className="border border-[#EAE9F7] rounded-[24px] lg:p-[24px] p-[10px]  gap-[24px] flex lg:flex-row flex-col-reverse lg:items-start items-center justify-center">
+      <div className="border border-[#EAE9F7] rounded-[24px] lg:p-[24px] sm:p-[18px] p-[10px]  gap-[24px] flex lg:flex-row flex-col-reverse lg:items-start items-center justify-center">
         <div className="flex flex-col lg:w-[550px] xl:w-[628px] w-[80%]">
           <h1 className={`text-[32px] text-[#18181B] ${archivo.className}`}>
             Payment Details

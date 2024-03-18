@@ -1,7 +1,12 @@
+import Download from "@/components/dashboard/download/Download";
 import React from "react";
 
 function Page() {
-  return <div>Page</div>;
+  return (
+    <>
+     <Download />
+    </>
+  );
 }
 
 export default Page;

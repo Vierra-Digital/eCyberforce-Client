@@ -1,0 +1,25 @@
+.Container {
+  height: 76px;
+  border-bottom: 1px solid #ededf8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10%;
+  gap: 10px;
+}
+
+.SearchBar {
+  width: clamp(1px, 910px, 90%);
+  height: 52px;
+  border: 1px solid #eae9f7;
+  border-radius: 4px;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SearchWord {
+  font-size: 14px;
+  color: #18181b;
+}

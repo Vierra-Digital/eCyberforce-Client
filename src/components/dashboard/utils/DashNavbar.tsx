@@ -120,7 +120,7 @@ function DashboardNavbar() {
               <div>
                 <Svgcomp
                   type={`${bop.url}`}
-                  fill={hover && ind == index ? "#9538fe" : "#000000"}
+                  fill={hover && ind == index + 100 ? "#9538fe" : "#000000"}
                 />
               </div>
               <div

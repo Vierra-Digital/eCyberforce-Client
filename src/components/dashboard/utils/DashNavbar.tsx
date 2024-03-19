@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import styles from "./DashNavbar.module.css";
+import styles from "./css/DashNavbar.module.css";
 import Image from "next/image";
 import Logo from "./img/Logo.png";
 import Size from "./img/Vector.png";

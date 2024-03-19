@@ -2,7 +2,7 @@ import React from "react";
 import { Sora } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../css/Navbar.module.css";
+import styles from ".././Navbar.module.css";
 import { motion } from "framer-motion";
 
 type SideProps = {

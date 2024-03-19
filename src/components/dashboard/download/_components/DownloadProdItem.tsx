@@ -14,7 +14,7 @@ export default function DownloadProdItem({ name, date }: Dprops) {
   const text = date === "Subscribe (January 5,2024)" ? "Renew" : "View Details";
   return (
     <div
-      className={`flex items-center justify-between rounded-[6px] py-[4px] hover:bg-[#F7F8FA] w-full`}
+      className={`flex items-center justify-between rounded-[6px] py-[4px] hover:bg-[#F7F8FA] w-full cursor-pointer`}
     >
       <div className="flex">
         <div className="flex gap-2 w-[390px]">

@@ -11,14 +11,14 @@ const archivo = Archivo({
 export default function Download() {
   return (
     <div>
-      <div className="px-[24px]">
+      <div className="pr-[40px]">
         <h1 className={`text-[#18181B] text-[32px] font-medium`}>Downloads</h1>
         <div className="flex gap-[20px] lg:justify-end justify-start my-6">
-          <button className="flex gap-[10px] p-[10px] border border-[#EAE9F7] rounded-[4px] w-[150px] h-[65px] items-center justify-center">
+          <button className="flex gap-[10px] border border-[#EAE9F7] rounded-[4px] w-[150px] h-[65px] items-center justify-center">
             <Image src="/clock.svg" alt="clock" width={24} height={24} />
             <span className="text-nowrap">Select Date</span>
           </button>
-          <button className="flex gap-[10px] p-[10px] border border-[#EAE9F7] rounded-[4px] w-[150px] h-[65px] items-center justify-center">
+          <button className="flex gap-[10px] border border-[#EAE9F7] rounded-[4px] w-[150px] h-[65px] items-center justify-center">
             <Image src="/funnel.svg" alt="clock" width={24} height={24} />
             <span>Filters</span>
           </button>

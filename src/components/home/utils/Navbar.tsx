@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./css/Navbar.module.css";
 import Link from "next/link";
 import { useState } from "react";
-import Sidebar from "./_components/Sidebar";
+import Sidebar from "./css/_components/Sidebar";
 import { Sora } from "next/font/google";
 import { useScroll } from "./hook/usescroll";
 

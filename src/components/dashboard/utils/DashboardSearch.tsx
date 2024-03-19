@@ -1,5 +1,5 @@
 import { Archivo } from "next/font/google";
-import styles from "./Dashboardsearch.module.css";
+import styles from "./css/Dashboardsearch.module.css";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -10,7 +10,6 @@ function DashboardSearch() {
   return (
     <div className={styles.Container}>
       <div className={styles.SearchBar}>
-        <div></div>
         <div className={styles.SearchWord}>
           <svg
             width="20"

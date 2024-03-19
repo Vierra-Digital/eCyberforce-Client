@@ -34,18 +34,9 @@
   width: 95%;
 }
 
-@media screen and (max-width: 450px) {
-  .table {
-    width: 100%;
-  }
-  .container_table {
-    width: 270px;
-    overflow-x: scroll;
-  }
-}
 @media screen and (max-width: 370px) {
   .container_table {
-    width: 220px;
+    width: 250px;
     overflow-x: scroll;
   }
 }

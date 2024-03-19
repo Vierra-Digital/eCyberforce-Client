@@ -1,5 +1,5 @@
 .Container {
-  height: 100%;
+  height: 100vh;
   border-right: 1px solid #ededf8;
   flex-shrink: 0;
 }
@@ -109,4 +109,10 @@
   line-height: 15px;
   letter-spacing: -2%;
   transition: color 0.3s ease-in-out;
+}
+
+@media (max-width: 752px) {
+  .Container {
+    display: none;
+  }
 }

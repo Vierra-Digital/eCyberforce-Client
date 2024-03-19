@@ -13,10 +13,13 @@ function Dashboard_history() {
     <div className={styles.container}>
       <div className={styles.header}>
         <h1>Order History</h1>
-        <div className="flex gap-[20px] lg:justify-end justify-start my-6">
+        <div
+          className="flex gap-[20px] lg:justify-end justify-start"
+          style={{ marginBottom: "24px" }}
+        >
           <button
             className="flex gap-[10px] p-[10px] border border-[#EAE9F7] 
-            rounded-[4px] w-full md:w-[150px] h-[65px] items-center justify-center"
+          rounded-[4px] w-full md:w-[150px] h-[65px] items-center justify-center"
           >
             <Image src="/clock.svg" alt="clock" width={24} height={24} />
             <span className="text-nowrap">Select Date</span>

@@ -70,10 +70,14 @@
   }
 }
 
+.container_table {
+  margin-right: 30px;
+}
+
 /* table */
 .table {
   margin: 30px auto 30px auto;
-  width: 95%;
+  width: 100%;
 }
 @media screen and (max-width: 700px) {
   .table {
@@ -100,7 +104,7 @@
   }
 }
 .table colgroup .col_fourth {
-  width: 50%;
+  width: 40%;
 }
 @media screen and (max-width: 1000px) {
   .table colgroup .col_fourth {

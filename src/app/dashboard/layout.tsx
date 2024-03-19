@@ -12,7 +12,9 @@ export default function DashboardLayout({
       <DashboardNavbar />
       <div className={styles.MainContainer}>
         <DashboardSearch />
-        <div style={{ paddingLeft: "30px" }}>{children}</div>
+        <div style={{ paddingLeft: "30px", paddingTop: "30px" }}>
+          {children}
+        </div>
       </div>
     </div>
   );

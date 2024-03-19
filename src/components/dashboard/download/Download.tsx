@@ -12,9 +12,7 @@ export default function Download() {
   return (
     <div>
       <div className="px-[24px]">
-        <h1 className={`text-[#18181B] text-[32px] font-medium mt-6`}>
-          Downloads
-        </h1>
+        <h1 className={`text-[#18181B] text-[32px] font-medium`}>Downloads</h1>
         <div className="flex gap-[20px] lg:justify-end justify-start my-6">
           <button className="flex gap-[10px] p-[10px] border border-[#EAE9F7] rounded-[4px] w-[150px] h-[65px] items-center justify-center">
             <Image src="/clock.svg" alt="clock" width={24} height={24} />

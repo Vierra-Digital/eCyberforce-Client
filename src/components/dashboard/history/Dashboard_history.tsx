@@ -6,25 +6,22 @@ import { CiClock1 } from "react-icons/ci";
 
 import { SlArrowDown } from "react-icons/sl";
 import Columns from "./columns/Columns";
+import Image from "next/image";
 
 function Dashboard_history() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
         <h1>Order History</h1>
-        <div className={styles.filter_date}>
-          <div className={styles.date}>
-            <span>
-              <CiClock1 size={28} />
-            </span>
-            <h5>Select Date</h5>
-          </div>
-          <div className={styles.filter}>
-            <span>
-              <CiFilter size={28} />
-            </span>
-            <h5>Filters</h5>
-          </div>
+        <div className="flex gap-[20px] lg:justify-end justify-start my-6">
+          <button className="flex gap-[10px] p-[10px] border border-[#EAE9F7] rounded-[4px] w-[150px] h-[65px] items-center justify-center">
+            <Image src="/clock.svg" alt="clock" width={24} height={24} />
+            <span className="text-nowrap">Select Date</span>
+          </button>
+          <button className="flex gap-[10px] p-[10px] border border-[#EAE9F7] rounded-[4px] w-[150px] h-[65px] items-center justify-center">
+            <Image src="/funnel.svg" alt="clock" width={24} height={24} />
+            <span>Filters</span>
+          </button>
         </div>
       </div>
       <div className={styles.container_table}>

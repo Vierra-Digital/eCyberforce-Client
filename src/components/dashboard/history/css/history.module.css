@@ -2,6 +2,11 @@
   margin: 10px 0;
   width: 100%;
 }
+@media screen and (max-width: 400px) {
+  .container {
+    width: 90%;
+  }
+}
 .container .header {
   display: flex;
   flex-direction: column;

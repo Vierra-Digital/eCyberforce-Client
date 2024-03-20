@@ -27,7 +27,7 @@ export default function DownloadedProd() {
           className={
             isClicked && Prodid == id
               ? "border border-[#0171C9] rounded-[6px] bg-[#F7F8FA]"
-              : "border border-[#00000000] rounded-[6px] bg-[#F7F8FA]"
+              : "border border-[#00000000] rounded-[6px]"
           }
           onMouseEnter={() => showBorder(id, true)}
           onMouseLeave={() => showBorder(id, false)}

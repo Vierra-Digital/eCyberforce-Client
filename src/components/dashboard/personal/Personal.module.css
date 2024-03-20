@@ -1,0 +1,39 @@
+.FormContainer {
+  margin: 0 auto;
+  margin-top: 150px;
+  width: clamp(1px, 100%, 890px);
+  padding-right: 30px;
+}
+
+.FormSplitter {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0px;
+  width: 100%;
+}
+
+.FormsSubmit {
+  width: 50%;
+  height: 60px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (max-width: 752px) {
+  .FormsSubmit {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .FormSplitter {
+    flex-direction: column;
+  }
+}

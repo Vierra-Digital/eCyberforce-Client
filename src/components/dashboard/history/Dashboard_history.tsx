@@ -13,24 +13,17 @@ function Dashboard_history() {
     <div className={styles.container}>
       <div className={styles.header}>
         <h1>Order History</h1>
-        <div
-          className="flex gap-[20px] lg:justify-end justify-start"
-          style={{ marginBottom: "24px" }}
-        >
-          <button
-            className="flex gap-[10px] p-[10px] border border-[#EAE9F7] 
-          rounded-[4px] w-full md:w-[150px] h-[65px] items-center justify-center"
-          >
-            <Image src="/clock.svg" alt="clock" width={24} height={24} />
-            <span className="text-nowrap">Select Date</span>
-          </button>
-          <button
-            className="flex gap-[10px] p-[10px] border border-[#EAE9F7] 
-            rounded-[4px] w-full md:w-[150px] h-[65px] items-center justify-center"
-          >
-            <Image src="/funnel.svg" alt="clock" width={24} height={24} />
-            <span>Filters</span>
-          </button>
+        <div className="pr-[40px]">
+          <div className="flex gap-[20px] lg:justify-end justify-start my-6">
+            <button className="flex gap-[10px] border border-[#EAE9F7] rounded-[4px] w-[150px] h-[65px] items-center justify-center">
+              <Image src="/clock.svg" alt="clock" width={24} height={24} />
+              <span className="text-nowrap">Select Date</span>
+            </button>
+            <button className="flex gap-[10px] border border-[#EAE9F7] rounded-[4px] w-[150px] h-[65px] items-center justify-center">
+              <Image src="/funnel.svg" alt="clock" width={24} height={24} />
+              <span>Filters</span>
+            </button>
+          </div>
         </div>
       </div>
       <div className={styles.container_table}>

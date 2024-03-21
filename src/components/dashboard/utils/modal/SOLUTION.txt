@@ -1,0 +1,1 @@
+Have every custom component of order history and downloads have modal inside of them so it can read the data easily without needing store

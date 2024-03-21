@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap");
+
+.Container {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(183, 183, 183, 0.5);
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  justify-content: flex-end;
+}
+
+.Modal {
+  border: 1px solid #8c26ff;
+  border-radius: 24px;
+  height: calc(100% - 50px);
+  width: 590px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  margin-right: 20px;
+  background-color: white;
+}
+
+.ModalTitle {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: -2%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eae9f7;
+  padding-bottom: 8px;
+}
+
+.Close {
+  cursor: pointer;
+}
+
+.Product {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border: 1px solid #eae9f7;
+  border-radius: 24px;
+  padding: 16px;
+  margin-top: 30px;
+}
+
+.ProductImage {
+  width: 110px;
+  height: 110px;
+}
+
+.ProductName {
+  line-height: 24px;
+  color: black;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ProductContext {
+  font-size: 14px;
+  line-height: 24px;
+  color: #3f3f46;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ProductInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.ProductContent {
+  display: flex;
+  align-items: center;
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.ContentTitle {
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 225px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.ContentContext {
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  color: #888e9c;
+  line-height: 18px;
+}
+
+.Billing {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.BillingTitle {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: -2%;
+  margin: 20px 0px;
+}
+
+.Buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.Buttons > * {
+  margin: 30px 0px;
+  width: 175px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Help {
+  border: 1px solid #eae9f7;
+}
+
+.Track {
+  background-color: black;
+  color: white;
+}

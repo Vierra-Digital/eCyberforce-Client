@@ -7,6 +7,7 @@ import { CiClock1 } from "react-icons/ci";
 import { SlArrowDown } from "react-icons/sl";
 import Columns from "./columns/Columns";
 import Image from "next/image";
+import Modal from "../utils/modal/Modal";
 
 function Dashboard_history() {
   return (
@@ -80,55 +81,16 @@ function Dashboard_history() {
             </tr>
           </thead>
           <tbody>
-            <Columns
-              order="#8786"
-              date="January 5,2024"
-              status="Paid"
-              total="$1500"
-              action="View Details"
-            />
-            <Columns
-              order="#8786"
-              date="January 5,2024"
-              status="Paid"
-              total="$1500"
-              action="View Details"
-            />
-            <Columns
-              order="#8786"
-              date="January 5,2024"
-              status="Paid"
-              total="$1500"
-              action="View Details"
-            />
-            <Columns
-              order="#8786"
-              date="January 5,2024"
-              status="Paid"
-              total="$1500"
-              action="View Details"
-            />
-            <Columns
-              order="#8786"
-              date="January 5,2024"
-              status="Paid"
-              total="$1500"
-              action="View Details"
-            />
-            <Columns
-              order="#8786"
-              date="January 5,2024"
-              status="Paid"
-              total="$1500"
-              action="View Details"
-            />
-            <Columns
-              order="#8786"
-              date="January 5,2024"
-              status="Paid"
-              total="$1500"
-              action="View Details"
-            />
+            {[1, 1, 1, 1, 1, 1, 1, 1].map((index) => (
+              <Columns
+                order="#8786"
+                date="January 5,2024"
+                status="Paid"
+                total="$1500"
+                action="View Details"
+                key={index}
+              />
+            ))}
           </tbody>
         </table>
       </div>

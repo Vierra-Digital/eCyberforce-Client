@@ -17,11 +17,11 @@ function Modal({ debug }: { debug: any }) {
   const { opened, openModal, closeModal } = useModalStore();
   const container = {
     open: { opacity: 1 },
-    close: { opacity: 0, zIndex: "-999" },
+    close: { opacity: 0 },
   };
   const modal = {
     open: { x: 0 },
-    close: { x: 200 },
+    close: { x: 400 },
   };
   const noShow = {
     pointerEvents: opened

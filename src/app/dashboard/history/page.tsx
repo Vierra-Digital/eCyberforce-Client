@@ -1,9 +1,9 @@
-import Dashboard_history from "@/components/dashboard/history/Dashboard_history";
+import DashboardHistory from "@/components/dashboard/history/Dashboard_history";
 
 function Page() {
   return (
     <div>
-      <Dashboard_history />
+      <DashboardHistory />
     </div>
   );
 }

@@ -9,7 +9,7 @@ import Columns from "./columns/Columns";
 import Image from "next/image";
 import Modal from "../utils/modal/Modal";
 
-function Dashboard_history() {
+function DashboardHistory() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -28,59 +28,113 @@ function Dashboard_history() {
         </div>
       </div>
       <div className={styles.container_table}>
-        <table className={styles.table}>
-          <colgroup>
-            <col className={styles.col_one} />
-            <col className={styles.col_two} />
-            <col className={styles.col_three} />
-            <col className={styles.col_fourth} />
-            <col className={styles.col_five} />
-          </colgroup>
-          <thead>
-            <tr>
-              <th>
-                <div>
-                  <h5>Order #</h5>
-                  <span>
-                    <SlArrowDown size={9} />
-                  </span>
-                </div>
-              </th>
-              <th>
-                <div>
-                  <h5>Date</h5>{" "}
-                  <span>
-                    <SlArrowDown size={9} />
-                  </span>
-                </div>
-              </th>
-              <th>
-                <div>
-                  <h5>Status</h5>
-                  <span>
-                    <SlArrowDown size={9} />
-                  </span>
-                </div>
-              </th>
-              <th>
-                <div>
-                  <h5>Total</h5>{" "}
-                  <span>
-                    <SlArrowDown size={9} />
-                  </span>
-                </div>
-              </th>
-              <th>
-                <div>
-                  <h5>Action</h5>{" "}
-                  <span>
-                    <SlArrowDown size={9} />
-                  </span>
-                </div>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
+        <Modal state={false} debug={undefined} />
+        <div className={styles.Table}>
+          <div className={styles.TableHead}>
+            <div className={styles.TableHeadLeft}>
+              <div>
+                <div>Order #</div>
+                <span>
+                  <svg
+                    width="15"
+                    height="16"
+                    viewBox="0 0 15 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.375 6.66667L7.5 10L10.625 6.66667"
+                      stroke="#18181B"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div>
+                <div>Date</div>
+                <span>
+                  <svg
+                    width="15"
+                    height="16"
+                    viewBox="0 0 15 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.375 6.66667L7.5 10L10.625 6.66667"
+                      stroke="#18181B"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div>
+                <div>Status</div>
+                <span>
+                  <svg
+                    width="15"
+                    height="16"
+                    viewBox="0 0 15 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.375 6.66667L7.5 10L10.625 6.66667"
+                      stroke="#18181B"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div>
+                <div>Total</div>
+                <span>
+                  <svg
+                    width="15"
+                    height="16"
+                    viewBox="0 0 15 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.375 6.66667L7.5 10L10.625 6.66667"
+                      stroke="#18181B"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div className={styles.TableHeadRight}>
+              <div>Action</div>
+              <span>
+                <svg
+                  width="15"
+                  height="16"
+                  viewBox="0 0 15 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.375 6.66667L7.5 10L10.625 6.66667"
+                    stroke="#18181B"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div className={styles.TableContent}>
             {[1, 1, 1, 1, 1, 1, 1, 1].map((index) => (
               <Columns
                 order="#8786"
@@ -91,11 +145,11 @@ function Dashboard_history() {
                 key={index}
               />
             ))}
-          </tbody>
-        </table>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
 
-export default Dashboard_history;
+export default DashboardHistory;

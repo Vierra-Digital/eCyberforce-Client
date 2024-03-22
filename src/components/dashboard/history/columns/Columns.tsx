@@ -1,3 +1,5 @@
+import styles from "./Column.module.css";
+
 interface Iprops {
   order: string;
   date: string;
@@ -8,15 +10,17 @@ interface Iprops {
 
 function Columns({ order, date, status, total, action }: Iprops) {
   return (
-    <tr>
-      <td>{order}</td>
-      <td>{date}</td>
-      <td>{status}</td>
-      <td>{total}</td>
-      <td>
-        <button>{action}</button>
-      </td>
-    </tr>
+    <div className={styles.Container}>
+      <div className={styles.LeftRows}>
+        <div className={styles.Row}>{order}</div>
+        <div className={styles.Row}>{date}</div>
+        <div className={styles.Row}>{status}</div>
+        <div className={styles.Row}>{total}</div>
+      </div>
+      <div>
+        <button className={styles.Button}>{action}</button>
+      </div>
+    </div>
   );
 }
 

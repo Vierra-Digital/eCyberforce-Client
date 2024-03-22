@@ -6,14 +6,15 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Product from "./img/Product.png";
 import { useState, CSSProperties } from "react";
+import useModalStore from "./Store";
 
 const archivo = Archivo({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
 });
 
-function Modal({ state, debug }: { state: boolean; debug: any }) {
-  const [isOpen, setOpen] = useState(state);
+function Modal({ debug }: { debug: any }) {
+  const { opened, openModal, closeModal } = useModalStore();
   const container = {
     open: { opacity: 1 },
     close: { opacity: 0, zIndex: "-999" },
@@ -23,7 +24,7 @@ function Modal({ state, debug }: { state: boolean; debug: any }) {
     close: { x: 200 },
   };
   const noShow = {
-    pointerEvents: isOpen
+    pointerEvents: opened
       ? ("auto" as CSSProperties["pointerEvents"])
       : ("none" as CSSProperties["pointerEvents"]),
   };
@@ -31,21 +32,21 @@ function Modal({ state, debug }: { state: boolean; debug: any }) {
     <motion.div
       className={styles.Container}
       variants={container}
-      animate={isOpen ? "open" : "close"}
+      animate={opened ? "open" : "close"}
       initial={{ opacity: 0 }}
       style={noShow}
     >
       <motion.div
         className={styles.Modal}
         variants={modal}
-        animate={isOpen ? "open" : "close"}
+        animate={opened ? "open" : "close"}
         initial={{ x: 200 }}
       >
         <div className={styles.ModalTitle}>
           <div>
             <p className={archivo.className}>Order Details {debug}</p>
           </div>
-          <div className={styles.Close} onClick={() => setOpen(!isOpen)}>
+          <div className={styles.Close} onClick={closeModal}>
             <svg
               width="24"
               height="25"

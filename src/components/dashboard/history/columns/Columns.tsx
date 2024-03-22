@@ -1,3 +1,6 @@
+"use client";
+import Modal from "../../utils/modal/Modal";
+import useModalStore from "../../utils/modal/Store";
 import styles from "./Column.module.css";
 
 interface Iprops {
@@ -6,9 +9,12 @@ interface Iprops {
   status: string;
   total: string;
   action: string;
+  index: number;
 }
 
-function Columns({ order, date, status, total, action }: Iprops) {
+function Columns({ order, date, status, total, action, index }: Iprops) {
+  const { opened, openModal, closeModal } = useModalStore();
+
   return (
     <div className={styles.Container}>
       <div className={styles.LeftRows}>
@@ -18,8 +24,11 @@ function Columns({ order, date, status, total, action }: Iprops) {
         <div className={styles.Row}>{total}</div>
       </div>
       <div>
-        <button className={styles.Button}>{action}</button>
+        <button className={styles.Button} onClick={openModal}>
+          {action}
+        </button>
       </div>
+      <Modal debug={index} key={index} />
     </div>
   );
 }

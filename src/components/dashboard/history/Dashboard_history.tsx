@@ -28,7 +28,7 @@ function DashboardHistory() {
         </div>
       </div>
       <div className={styles.container_table}>
-        <Modal state={false} debug={undefined} />
+        {/* <Modal state={false} debug={undefined} /> */}
         <div className={styles.Table}>
           <div className={styles.TableHead}>
             <div className={styles.TableHeadLeft}>
@@ -135,13 +135,14 @@ function DashboardHistory() {
             </div>
           </div>
           <div className={styles.TableContent}>
-            {[1, 1, 1, 1, 1, 1, 1, 1].map((index) => (
+            {[1, 1, 1, 1, 1, 1, 1, 1].map((_, index) => (
               <Columns
                 order="#8786"
                 date="January 5,2024"
                 status="Paid"
                 total="$1500"
                 action="View Details"
+                index={index}
                 key={index}
               />
             ))}

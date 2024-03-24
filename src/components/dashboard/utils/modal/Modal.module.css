@@ -17,7 +17,7 @@
   border: 1px solid #8c26ff;
   border-radius: 24px;
   height: calc(100% - 50px);
-  width: 590px;
+  width: clamp(1px, 90vw, 590px);
   display: flex;
   flex-direction: column;
   padding: 24px;
@@ -146,4 +146,15 @@
 .Track {
   background-color: black;
   color: white;
+}
+
+@media (max-width: 655px) {
+  .Container {
+    justify-content: center;
+  }
+  .Modal {
+    margin-right: 0px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
 }

@@ -4,15 +4,14 @@ import useModalStore from "../../utils/modal/Store";
 import styles from "./Column.module.css";
 
 interface Iprops {
-  order: string;
-  date: string;
-  status: string;
-  total: string;
-  action: string;
+  order: any;
+  date: any;
+  status: any;
+  total: any;
   index: number;
 }
 
-function Columns({ order, date, status, total, action, index }: Iprops) {
+function Columns({ order, date, status, total, index }: Iprops) {
   const { opened, openModal, closeModal } = useModalStore();
 
   return (
@@ -25,10 +24,9 @@ function Columns({ order, date, status, total, action, index }: Iprops) {
       </div>
       <div>
         <button className={styles.Button} onClick={openModal}>
-          {action}
+          View Details
         </button>
       </div>
-      <Modal debug={index} key={index} />
     </div>
   );
 }

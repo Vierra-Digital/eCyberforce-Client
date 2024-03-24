@@ -1,13 +1,13 @@
 import { create } from "zustand";
 
 interface State {
-  opened: boolean;
+  opened: boolean | number;
   openModal: any;
   closeModal: any;
 }
 
 const useModalStore = create<State>((set) => ({
-  opened: false,
+  opened: 0,
   openModal: () => set({ opened: true }),
   closeModal: () => set({ opened: false }),
 }));

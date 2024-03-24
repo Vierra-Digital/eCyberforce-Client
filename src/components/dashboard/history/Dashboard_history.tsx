@@ -1,15 +1,21 @@
+"use client";
+
 import styles from "./css/history.module.css";
-
-// icone
-import { CiFilter } from "react-icons/ci";
-import { CiClock1 } from "react-icons/ci";
-
-import { SlArrowDown } from "react-icons/sl";
 import Columns from "./columns/Columns";
 import Image from "next/image";
 import Modal from "../utils/modal/Modal";
+import useSWR from "swr";
+
+const fetcher = (url: string | URL | Request) =>
+  fetch(url).then((res) => res.json());
 
 function DashboardHistory() {
+  const { data, error, isLoading } = useSWR(
+    "https://6600685f87c91a1164194a2d.mockapi.io/api/columns/purchasecolumn",
+    fetcher
+  );
+  if (error) throw error;
+  if (isLoading) return "Loading";
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -28,7 +34,7 @@ function DashboardHistory() {
         </div>
       </div>
       <div className={styles.container_table}>
-        {/* <Modal state={false} debug={undefined} /> */}
+        <Modal debug={undefined} />
         <div className={styles.Table}>
           <div className={styles.TableHead}>
             <div className={styles.TableHeadLeft}>
@@ -135,13 +141,10 @@ function DashboardHistory() {
             </div>
           </div>
           <div className={styles.TableContent}>
-            {[1, 1, 1, 1, 1, 1, 1, 1].map((_, index) => (
+            {data.map((columns: any, index: number) => (
               <Columns
-                order="#8786"
-                date="January 5,2024"
-                status="Paid"
-                total="$1500"
-                action="View Details"
+                {...columns}
+                status={columns.status ? "Paid" : "Not paid"}
                 index={index}
                 key={index}
               />

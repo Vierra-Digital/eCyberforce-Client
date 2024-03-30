@@ -33,3 +33,31 @@
   padding: 10px;
   color: white;
 }
+
+.Buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.Buttons > * {
+  height: 48px;
+  width: 160px;
+  background-color: #18181b;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+}
+
+.ButtonRenew {
+}
+
+.ButtonDownload {
+  background: linear-gradient(103.45deg, #9747ff 34.87%, #0171c9 87.14%);
+}
+
+.ButtonDetails {
+  background-color: transparent;
+  color: black;
+  border: 1px solid #eae9f7;
+}

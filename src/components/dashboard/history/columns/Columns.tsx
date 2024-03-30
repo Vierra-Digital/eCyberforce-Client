@@ -1,4 +1,5 @@
 "use client";
+import { Sora } from "next/font/google";
 import Modal from "../../utils/modal/Modal";
 import useModalStore from "../../utils/modal/Store";
 import styles from "./Column.module.css";
@@ -11,7 +12,11 @@ interface Iprops {
   index: number;
 }
 
-function Columns({ order, date, status, total, index }: Iprops) {
+const sora = Sora({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+export function Columns({ order, date, status, total, index }: Iprops) {
   const { opened, openModal, closeModal } = useModalStore();
 
   return (
@@ -24,11 +29,44 @@ function Columns({ order, date, status, total, index }: Iprops) {
       </div>
       <div>
         <button className={styles.Button} onClick={openModal}>
-          View Details
+          <p className={sora.className}>View Details</p>
         </button>
       </div>
     </div>
   );
 }
 
-export default Columns;
+// So take the index of clicked then
+
+export function ColumnDownload({
+  product,
+  expire,
+}: {
+  product: any;
+  expire: any;
+}) {
+  const { opened, openModal, closeModal } = useModalStore();
+
+  return (
+    <div className={styles.Container}>
+      <div className={styles.LeftRows}>
+        <div className={styles.Row}>{product}</div>
+        <div className={styles.Row}>{expire}</div>
+      </div>
+      <div className={styles.Buttons}>
+        {expire != "Never" ? (
+          <button className={styles.ButtonRenew} onClick={openModal}>
+            <p className={sora.className}>Renew</p>
+          </button>
+        ) : (
+          <button className={styles.ButtonDetails} onClick={openModal}>
+            <p className={sora.className}>View Details</p>
+          </button>
+        )}
+        <button className={styles.ButtonDownload}>
+          <p className={sora.className}>Download</p>
+        </button>
+      </div>
+    </div>
+  );
+}

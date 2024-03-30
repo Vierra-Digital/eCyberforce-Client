@@ -7,13 +7,22 @@ import Image from "next/image";
 import Product from "./img/Product.png";
 import { useState, CSSProperties } from "react";
 import useModalStore from "./Store";
+import { usePathname } from "next/navigation";
 
 const archivo = Archivo({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
 });
 
-function Modal({ debug }: { debug: any }) {
+function Modal({
+  order_number,
+  date,
+  paid,
+}: {
+  order_number?: number;
+  date?: number;
+  paid?: any;
+}) {
   const { opened, openModal, closeModal } = useModalStore();
   const container = {
     open: { opacity: 1 },
@@ -28,6 +37,7 @@ function Modal({ debug }: { debug: any }) {
       ? ("auto" as CSSProperties["pointerEvents"])
       : ("none" as CSSProperties["pointerEvents"]),
   };
+  const pathname = usePathname();
   return (
     <motion.div
       className={styles.Container}
@@ -44,7 +54,11 @@ function Modal({ debug }: { debug: any }) {
       >
         <div className={styles.ModalTitle}>
           <div>
-            <p className={archivo.className}>Order Details {debug}</p>
+            <p className={archivo.className}>
+              {pathname === "/dashboard/history"
+                ? "Order History"
+                : "Product Details"}
+            </p>
           </div>
           <div className={styles.Close} onClick={closeModal}>
             <svg
@@ -95,11 +109,11 @@ function Modal({ debug }: { debug: any }) {
           </div>
           <div className={styles.ProductContent}>
             <div className={styles.ContentTitle}>Order Number</div>
-            <div className={styles.ContentContext}>#1145653</div>
+            <div className={styles.ContentContext}>#{order_number}</div>
           </div>
           <div className={styles.ProductContent}>
             <div className={styles.ContentTitle}>Date</div>
-            <div className={styles.ContentContext}>December 1,2023</div>
+            <div className={styles.ContentContext}>{date}</div>
           </div>
           <div className={styles.ProductContent}>
             <div className={styles.ContentTitle}>Email</div>
@@ -111,7 +125,7 @@ function Modal({ debug }: { debug: any }) {
           </div>
           <div className={styles.ProductContent}>
             <div className={styles.ContentTitle}>Total Paid</div>
-            <div className={styles.ContentContext}>$1500</div>
+            <div className={styles.ContentContext}>{paid}</div>
           </div>
         </div>
         <div className={styles.Billing}>

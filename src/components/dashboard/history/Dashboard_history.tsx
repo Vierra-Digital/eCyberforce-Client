@@ -1,10 +1,11 @@
 "use client";
 
 import styles from "./css/history.module.css";
-import Columns from "./columns/Columns";
+import { Columns } from "./columns/Columns";
 import Image from "next/image";
 import Modal from "../utils/modal/Modal";
 import useSWR from "swr";
+import { useState } from "react";
 
 const fetcher = (url: string | URL | Request) =>
   fetch(url).then((res) => res.json());
@@ -14,6 +15,11 @@ function DashboardHistory() {
     "https://6600685f87c91a1164194a2d.mockapi.io/api/columns/purchasecolumn",
     fetcher
   );
+  const [modalData, setModalData] = useState<any>({});
+  function dataFunction(x: any) {
+    setModalData(x);
+  }
+
   if (error) throw error;
   if (isLoading) return "Loading";
   return (
@@ -34,7 +40,11 @@ function DashboardHistory() {
         </div>
       </div>
       <div className={styles.container_table}>
-        <Modal debug={undefined} />
+        <Modal
+          order_number={modalData.order}
+          date={modalData.date}
+          paid={modalData.total}
+        />
         <div className={styles.Table}>
           <div className={styles.TableHead}>
             <div className={styles.TableHeadLeft}>
@@ -142,12 +152,14 @@ function DashboardHistory() {
           </div>
           <div className={styles.TableContent}>
             {data.map((columns: any, index: number) => (
-              <Columns
-                {...columns}
-                status={columns.status ? "Paid" : "Not paid"}
-                index={index}
-                key={index}
-              />
+              <div key={index + 1000} onClick={() => dataFunction(data[index])}>
+                <Columns
+                  {...columns}
+                  status={columns.status ? "Paid" : "Not paid"}
+                  index={index}
+                  key={index}
+                />
+              </div>
             ))}
           </div>
         </div>

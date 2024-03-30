@@ -7,7 +7,7 @@ interface State {
 }
 
 const useModalStore = create<State>((set) => ({
-  opened: 0,
+  opened: false,
   openModal: () => set({ opened: true }),
   closeModal: () => set({ opened: false }),
 }));

@@ -1,9 +1,15 @@
 import Form from "@/components/dashboard/utils/Form";
-import Image from "next/image";
 import React from "react";
 import styles from "@/components/dashboard/personal/Personal.module.css";
+import { createClient } from "@/components/supabase/server";
+import { redirect } from "next/navigation";
 
-function Page() {
+export default async function Page({ params }: { params: { id: string } }) {
+  const supabase = createClient();
+  const { data } = await supabase.auth.getUser();
+  if (params.id !== data.user?.id) {
+    redirect("/");
+  }
   return (
     <div>
       <h1
@@ -34,5 +40,3 @@ function Page() {
     </div>
   );
 }
-
-export default Page;

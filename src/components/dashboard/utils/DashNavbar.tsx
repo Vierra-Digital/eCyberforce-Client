@@ -9,23 +9,27 @@ import Profile from "./img/Account.png";
 import { Archivo } from "next/font/google";
 import { useState } from "react";
 import Svgcomp from "./img/Svgcomp";
+import { useRouter } from "next/navigation";
 
 const archivo = Archivo({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
 });
 
-function DashboardNavbar() {
+function DashboardNavbar({ userid }: { userid: any }) {
   const button = {
     account: [
       {
         url: "Profile",
+        redirect: "profile",
       },
       {
         url: "Order History",
+        redirect: "history",
       },
       {
         url: "Downloads",
+        redirect: "downloads",
       },
     ],
     problem: [
@@ -37,6 +41,7 @@ function DashboardNavbar() {
       },
     ],
   };
+  const router = useRouter();
   const [hover, setHover] = useState(false);
   const [ind, setInd] = useState(0);
   function hoverer(index: number, hover: any) {
@@ -99,6 +104,9 @@ function DashboardNavbar() {
               key={index}
               onMouseEnter={() => hoverer(index, true)}
               onMouseLeave={() => hoverer(index, false)}
+              onClick={() =>
+                router.push(`/dashboard/${userid}/${bop.redirect}`)
+              }
             >
               <div style={svg}>
                 <Svgcomp

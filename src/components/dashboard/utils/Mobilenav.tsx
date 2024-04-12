@@ -6,23 +6,27 @@ import { useState } from "react";
 import { Archivo } from "next/font/google";
 import Profile from "./img/Account.png";
 import Svgcomp from "./img/Svgcomp";
+import { useRouter } from "next/navigation";
 
 const archivo = Archivo({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
 });
 
-function Mobilenav() {
+function Mobilenav({ userid }: { userid: any }) {
   const button = {
     account: [
       {
         url: "Profile",
+        redirect: "profile",
       },
       {
         url: "Order History",
+        redirect: "history",
       },
       {
         url: "Downloads",
+        redirect: "downloads",
       },
     ],
     problem: [
@@ -32,11 +36,9 @@ function Mobilenav() {
       {
         url: "FAQ",
       },
-      {
-        url: "Logout",
-      },
     ],
   };
+  const router = useRouter();
   const [drop, setDrop] = useState(false);
   const variant = {
     open: {
@@ -118,6 +120,9 @@ function Mobilenav() {
                 key={index}
                 onMouseEnter={() => hoverer(index, true)}
                 onMouseLeave={() => hoverer(index, false)}
+                onClick={() =>
+                  router.push(`/dashboard/${userid}/${bop.redirect}`)
+                }
               >
                 <div>
                   <Svgcomp

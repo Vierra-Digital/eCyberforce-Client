@@ -3,6 +3,7 @@ import Logo from "./img/logo.svg";
 import Image from "next/image";
 import Inputs from "./Inputs";
 import "./css/login_styles.css";
+
 function Login() {
   return (
     <div className={styles.container}>
@@ -24,13 +25,8 @@ function Login() {
           you don ’t have one yet.
         </p>
         <div className={styles.input}>
-          <Inputs idInput="email_input" label="Email" type="text" />
+          <Inputs />
         </div>
-        <h3>
-          By continuing, you accept <span>Terms & Conditions,</span>
-          <span>Privacy Policy</span>
-        </h3>
-        <button>Get Sign-in Link </button>
       </div>
     </div>
   );

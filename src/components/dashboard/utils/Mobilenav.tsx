@@ -13,7 +13,15 @@ const archivo = Archivo({
   weight: ["400", "500", "600"],
 });
 
-function Mobilenav({ userid }: { userid: any }) {
+function Mobilenav({
+  userid,
+  name,
+  email,
+}: {
+  userid: any;
+  name: any;
+  email: any;
+}) {
   const button = {
     account: [
       {
@@ -104,10 +112,10 @@ function Mobilenav({ userid }: { userid: any }) {
           <Image src={Profile} alt={""} className={styles.AccountPic} />
           <div className={styles.AccountInfo}>
             <div className={styles.AccountName}>
-              <p className={archivo.className}>Last Name</p>
+              <p className={archivo.className}>{name}</p>
             </div>
             <div className={styles.AccountEmail}>
-              <p className={archivo.className}>Somebody@gmail.com</p>
+              <p className={archivo.className}>{email}</p>
             </div>
           </div>
         </div>

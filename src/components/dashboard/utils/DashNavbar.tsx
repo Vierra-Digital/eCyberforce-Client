@@ -16,7 +16,15 @@ const archivo = Archivo({
   weight: ["400", "500", "600"],
 });
 
-function DashboardNavbar({ userid }: { userid: any }) {
+function DashboardNavbar({
+  userid,
+  email,
+  name,
+}: {
+  userid: any;
+  email: any;
+  name: any;
+}) {
   const button = {
     account: [
       {
@@ -88,10 +96,10 @@ function DashboardNavbar({ userid }: { userid: any }) {
         <Image src={Profile} alt={""} className={styles.AccountPic} />
         <div className={styles.AccountInfo} style={navButtons}>
           <div className={styles.AccountName}>
-            <p className={archivo.className}>Last Name</p>
+            <p className={archivo.className}>{name}</p>
           </div>
           <div className={styles.AccountEmail}>
-            <p className={archivo.className}>Somebody@gmail.com</p>
+            <p className={archivo.className}>{email}</p>
           </div>
         </div>
       </div>

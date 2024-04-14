@@ -1,5 +1,8 @@
+"use client";
 import { Archivo } from "next/font/google";
 import styles from "./css/Dashboardsearch.module.css";
+import { createClient } from "@/components/supabase/client";
+import { useRouter } from "next/navigation";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -7,6 +10,12 @@ const archivo = Archivo({
 });
 
 function DashboardSearch() {
+  const supabase = createClient();
+  const router = useRouter();
+  const handleLogout = async () => {
+    await supabase.auth.signOut();
+    router.refresh();
+  };
   return (
     <div className={styles.Container}>
       <div className={styles.SearchBar}>
@@ -39,7 +48,7 @@ function DashboardSearch() {
           <p className={archivo.className}>Search Orders</p>
         </div>
       </div>
-      <div className={styles.Logout}>
+      <div className={styles.Logout} onClick={handleLogout}>
         <div className={styles.LogoutSvg}>
           <svg
             width="20"

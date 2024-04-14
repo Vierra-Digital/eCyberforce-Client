@@ -13,9 +13,17 @@ export default async function DashboardLayout({
   const { data, error } = await supabase.auth.getUser();
   return (
     <div className={styles.Container}>
-      <DashboardNavbar userid={data.user?.id} />
+      <DashboardNavbar
+        userid={data.user?.id}
+        name={data.user?.user_metadata.name}
+        email={data.user?.email}
+      />
       <div className={styles.MainContainer}>
-        <Mobilenav userid={data.user?.id} />
+        <Mobilenav
+          userid={data.user?.id}
+          name={data.user?.user_metadata.name}
+          email={data.user?.email}
+        />
         <DashboardSearch />
         <div style={{ paddingLeft: "30px", paddingTop: "30px" }}>
           {children}

@@ -21,6 +21,9 @@ async function Inputs() {
     const { data: userdata, error: serverError } =
       await supabase.auth.signInWithOtp({
         email,
+        // options:{
+
+        // }
       });
     if (serverError) {
       return redirect("/error?message=Could not authenticate user with signin");

@@ -26,6 +26,7 @@ async function Inputs() {
         // }
       });
     if (serverError) {
+      console.log(serverError);
       return redirect("/error?message=Could not authenticate user with signin");
     }
     clicked = true;

@@ -1,6 +1,8 @@
 .container {
   padding-top: 180px;
   width: 100%;
+  background: linear-gradient(174.09deg, #d0e4f2 15.95%, #643cf0 117.01%);
+  min-height: 100vh;
 }
 .container .model {
   margin: 0 auto;

@@ -2,7 +2,6 @@ import styles from "./css/login.module.css";
 import Logo from "./img/logo.svg";
 import Image from "next/image";
 import Inputs from "./Inputs";
-import "./css/login_styles.css";
 
 function Login() {
   return (

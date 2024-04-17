@@ -47,8 +47,10 @@ async function Inputs() {
     });
 
     if (error) {
+      clicked = false;
       return redirect("/error?message=Could not authenticate user with otp");
     }
+    clicked = false;
     return redirect("/dashboard");
   };
 

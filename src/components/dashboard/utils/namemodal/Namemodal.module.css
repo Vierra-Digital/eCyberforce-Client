@@ -6,5 +6,40 @@
   top: 0;
   display: flex;
   align-items: center;
+  z-index: 999;
   justify-content: center;
+  background-color: rgba(183, 183, 183, 0.5);
+  animation-name: delay;
+  opacity: 0;
+  animation-delay: 1s;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.Modal {
+  height: 250px;
+  width: clamp(1px, 100%, 700px);
+  overflow: hidden;
+  border-radius: 24px;
+  background-color: white;
+  border: 1px solid #8c26ff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.Title {
+  font-size: 28px;
+  letter-spacing: -2%;
+}
+
+@keyframes delay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

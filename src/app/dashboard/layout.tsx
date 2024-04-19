@@ -3,6 +3,7 @@ import DashboardSearch from "@/components/dashboard/utils/DashboardSearch";
 import styles from "@/components/dashboard/Main.module.css";
 import Mobilenav from "@/components/dashboard/utils/Mobilenav";
 import { createClient } from "@/components/supabase/server";
+import Namemodal from "@/components/dashboard/utils/namemodal/Namemodal";
 
 export default async function DashboardLayout({
   children, // will be a page or nested layout
@@ -25,6 +26,7 @@ export default async function DashboardLayout({
           email={data.user?.email}
         />
         <DashboardSearch />
+        <Namemodal />
         <div style={{ paddingLeft: "30px", paddingTop: "30px" }}>
           {children}
         </div>

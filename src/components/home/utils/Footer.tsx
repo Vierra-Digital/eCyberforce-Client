@@ -73,11 +73,26 @@ function Footer() {
           className={`lg:flex block text-center gap-[42px] text-[14px] font-normal ${archivo.className}`}
         >
           <p className="mb-2 lg:mb-0">
-            Copyright 2023 Alexersion LTD. All rights reserved.{" "}
+            Copyright 2023 Vierra Digital. All rights reserved.{" "}
           </p>
           <p>
             All code practices follow the MIT public developer license. All
             assets and materials registered in Cambridge Massachusetts
+          </p>
+        </div>
+      </div>
+      <div className="flex items-center justify-center pb-8">
+        <div className={`text-center text-[12px] font-normal ${archivo.className}`}>
+          <p>
+            Website Powered by{" "}
+            <a 
+              href="https://vierradev.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 underline"
+            >
+              Vierra Digital
+            </a>
           </p>
         </div>
       </div>

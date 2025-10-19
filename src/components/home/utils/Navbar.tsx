@@ -19,7 +19,7 @@ function Navbar() {
   const scroll = useScroll();
   return (
     <div
-      className={`bg-transparent pt-8 w-full backdrop-blur-[8px] z-[9999] ${
+      className={`bg-transparent pt-8 fixed top-0 left-0 w-full backdrop-blur-[8px] z-[9999] ${
         scroll ? "shadow-md" : ""
       }`}
     >
@@ -111,7 +111,7 @@ function Navbar() {
         <div className="2sm:flex items-center justify-center hidden">
           <div className="flex items-center gap-[30px]">
             {NavbarLinks.map((link) => (
-              <div key={link.key} className="flex items-center gap-1">
+              <div key={link.key} className="flex items-center gap-1 pb-[10px]">
                 <Link
                   href={link.url}
                   className={`text-[16px] tracking-wide ${sora.className}`}

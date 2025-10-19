@@ -82,7 +82,7 @@ function Footer() {
         </div>
       </div>
       <div className="flex items-center justify-center pb-8">
-        <div className={`text-center text-[14px] font-normal ${archivo.className}`}>
+        <div className={`text-center text-[12px] font-normal ${archivo.className}`}>
           <p>
             Website Powered by{" "}
             <a 

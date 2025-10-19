@@ -82,14 +82,14 @@ function Footer() {
         </div>
       </div>
       <div className="flex items-center justify-center pb-8">
-        <div className={`text-center text-[12px] font-normal ${archivo.className}`}>
+        <div className={`text-center text-[12px] font-normal text-[#3F3F46] ${archivo.className}`}>
           <p>
             Website Powered by{" "}
             <a 
               href="https://vierradev.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800 underline"
+              className="text-[#8C26FF] hover:text-[#9747FF] underline transition-colors duration-200"
             >
               Vierra Digital
             </a>
